@@ -5,8 +5,6 @@ import (
 	"fmt"
 	"github.com/fwhezfwhez/errorx"
 	ws2 "github.com/gorilla/websocket"
-	"tcpx"
-
 	"net/url"
 	"wsx"
 )
@@ -14,7 +12,6 @@ import (
 func main() {
 	gorilla()
 }
-
 
 func gorilla() {
 	var addr = flag.String("addr", "localhost:8080", "http service address")
@@ -36,12 +33,12 @@ func gorilla() {
 				fmt.Println(errorx.Wrap(e).Error())
 				return
 			}
-			header, e:= tcpx.HeaderOf(message)
+			header, e := wsx.HeaderOf(message)
 			if e != nil {
 				fmt.Println(errorx.Wrap(e).Error())
 				return
 			}
-			body,e:= tcpx.BodyBytesOf(message)
+			body, e := wsx.BodyBytesOf(message)
 			if e != nil {
 				fmt.Println(errorx.Wrap(e).Error())
 				return
@@ -62,21 +59,8 @@ func gorilla() {
 		panic(e)
 	}
 
-	buf2, e := wsx.Pack(12, wsx.H{
-		"Router-Type":       "URL_PATTERN",
-		"URL-Pattern-Value": "/user/user-info/list-users/",
-	}, wsx.H{
-		"game_id": 78,
-	})
-	if e != nil {
-		panic(e)
-	}
-
-
 	for i := 0; i < 1; i++ {
 		c.WriteMessage(ws2.BinaryMessage, buf)
-		//c.WriteMessage(ws2.BinaryMessage, buf2)
-		_=buf2
 	}
 
 	select {}

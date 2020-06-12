@@ -44,6 +44,7 @@ func (c *Context) Bind(dest interface{}) error {
 		return errorx.Wrap(e)
 	}
 
+	// 客户端如果没指定content-type会默认json
 	if c.contentType == "" {
 		return errorx.NewFromString("content-type not found")
 	}
@@ -68,8 +69,11 @@ func (c *Context) JSON(messageID int, v interface{}) error {
 	if e != nil {
 		return errorx.Wrap(e)
 	}
-	c.Conn.WriteMessage(websocket.BinaryMessage, res)
-
+	func() {
+		c.l.Lock()
+		defer c.l.Unlock()
+		c.Conn.WriteMessage(websocket.BinaryMessage, res)
+	}()
 	return nil
 }
 
@@ -81,6 +85,7 @@ func (c *Context) JSONUrlPattern(v interface{}) error {
 	res, e := PackWithMarshallerAndBody(Message{
 		MessageID: int32(0),
 		Header: map[string]interface{}{
+			HEADER_ROUTER_KEY: HEADER_ROUTER_TYPE_URL_PATTERN,
 			HEADER_URL_PATTERN_VALUE_KEY: c.urlPattern,
 		},
 	}, buf)

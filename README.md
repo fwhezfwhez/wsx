@@ -15,3 +15,8 @@ websocket手脚架开放工具
 
 ## 例子
 ./example
+
+## 使用
+```bash
+git clone https://github.com/fwhezfwhez/wsx.git $GOPATH/src/wsx
+```
