@@ -28,7 +28,6 @@ func FirstBlockOfBytes(buffer []byte) ([]byte, error) {
 	var length = binary.BigEndian.Uint32(buffer[0:4])
 	if len(buffer) < 4+int(length) {
 		return nil, errorx.NewFromStringf("require buffer length more than %d but got %d", 4+int(length), len(buffer))
-
 	}
 	return buffer[:4+int(length)], nil
 }

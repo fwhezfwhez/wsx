@@ -44,6 +44,7 @@ func (c *Context) Bind(dest interface{}) error {
 		return errorx.Wrap(e)
 	}
 
+	// 客户端如果没指定content-type会默认json
 	if c.contentType == "" {
 		return errorx.NewFromString("content-type not found")
 	}
