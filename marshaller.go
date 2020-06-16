@@ -7,6 +7,7 @@ import (
 	"github.com/fwhezfwhez/errorx"
 	"github.com/golang/protobuf/proto"
 )
+var JSON JsonMarshaller
 
 type Marshaller interface {
 	Marshal(interface{}) ([]byte, error)

@@ -9,7 +9,6 @@ import (
 
 const ABORT = 3000
 
-type H map[string]interface{}
 type Context struct {
 	// 全局值: 一个连接一旦建立，那么所有的基于该连接的请求，都会share以下字段
 	Conn *websocket.Conn
@@ -85,7 +84,7 @@ func (c *Context) JSONUrlPattern(v interface{}) error {
 	res, e := PackWithMarshallerAndBody(Message{
 		MessageID: int32(0),
 		Header: map[string]interface{}{
-			HEADER_ROUTER_KEY: HEADER_ROUTER_TYPE_URL_PATTERN,
+			HEADER_ROUTER_KEY:            HEADER_ROUTER_TYPE_URL_PATTERN,
 			HEADER_URL_PATTERN_VALUE_KEY: c.urlPattern,
 		},
 	}, buf)
@@ -120,6 +119,12 @@ func (c *Context) jsonUrlPattern(messageID int, urlPattern string, v interface{}
 		c.Conn.WriteMessage(websocket.BinaryMessage, res)
 	}()
 	return nil
+}
+
+func (c *Context) WriteMessage(buf []byte) error {
+	c.l.Lock()
+	defer c.l.Unlock()
+	return c.Conn.WriteMessage(websocket.BinaryMessage, buf)
 }
 
 func (c *Context) Clone() Context {
@@ -175,7 +180,7 @@ func (c *Context) isAbort() bool {
 	}
 	return false
 }
-func( c*Context) Abort() {
+func (c *Context) Abort() {
 	c.offset = ABORT
 }
 

@@ -5,6 +5,7 @@ websocket手脚架开放工具
 - 同时支持messageID路由，和url路由
 - 支持中间件
 - 各种api，仿gin设计
+- 支持用户池
 
 ## 依赖
 - "github.com/gorilla/websocket"
