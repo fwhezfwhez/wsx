@@ -72,6 +72,9 @@ func (p *Pool) Offline(username string) {
 		p.beforeOffline(c)
 	}
 	p.pool.Delete(username)
+	c.l.Lock()
+	c.Conn.Close()
+	c.l.Unlock()
 
 	if p.afterOffline != nil {
 		p.afterOffline(c)
