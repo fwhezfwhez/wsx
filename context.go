@@ -4,7 +4,9 @@ import (
 	"encoding/json"
 	"github.com/fwhezfwhez/errorx"
 	"github.com/gorilla/websocket"
+	"runtime/debug"
 	"sync"
+	"time"
 )
 
 const ABORT = 3000
@@ -16,6 +18,8 @@ type Context struct {
 
 	PerConnectionContext *sync.Map
 	username             *string
+	heartbeatChan        chan struct{}
+	onClose              func() error
 
 	// 临时值: 每次到达一个请求，都会Clone一个Context，复用了它的全局值，以下值都会重置
 	handlers          []func(c *Context)
@@ -27,13 +31,17 @@ type Context struct {
 }
 
 func NewContext(conn *websocket.Conn) *Context {
+	var u string
 	return &Context{
 		Conn:                 conn,
 		l:                    &sync.RWMutex{},
 		PerConnectionContext: &sync.Map{},
-		PerRequestContext:    &sync.Map{},
-		handlers:             make([]func(c *Context), 0, 10),
-		offset:               -1,
+		username:             &u,
+
+		heartbeatChan:     make(chan struct{}, 5),
+		PerRequestContext: &sync.Map{},
+		handlers:          make([]func(c *Context), 0, 10),
+		offset:            -1,
 	}
 }
 
@@ -151,6 +159,8 @@ func (c *Context) Clone() Context {
 		l:                    c.l,
 		PerConnectionContext: c.PerConnectionContext,
 		username:             c.username,
+		heartbeatChan:        c.heartbeatChan,
+		onClose:              c.onClose,
 
 		// 重置临时值
 		PerRequestContext: &sync.Map{},
@@ -198,4 +208,59 @@ func (c *Context) Reset() {
 
 func (c *Context) GetUrlPattern() string {
 	return c.urlPattern
+}
+
+func (c *Context) SetUsername(username string) {
+	*(c.username) = username
+}
+func (c *Context) Username() string {
+	if c.username == nil {
+		return ""
+	}
+	return *c.username
+}
+
+func (c *Context) RecvHeartbeat() {
+	select {
+	case <-time.After(15 * time.Second):
+		Printf("heartbeat chan is locked: \n %s", debug.Stack())
+	case c.heartbeatChan <- struct{}{}:
+		Printf("%s收到心跳", c.Username())
+	}
+}
+
+func (c *Context) SpyingOnHeartbeat() {
+	go func() {
+	L:
+		for {
+			select {
+			case <-time.After(10 * time.Second):
+				c.Close()
+				Printf("%s未收到心跳，自动关闭", c.Username())
+				break L
+			case <-c.heartbeatChan:
+				// do nothing
+				Printf("%s收到心跳，自动续约", c.Username())
+			}
+		}
+	}()
+}
+
+func (c *Context) Close() {
+
+	func() {
+		c.l.Lock()
+		defer c.l.Unlock()
+
+		c.Conn.Close()
+	}()
+
+	if c.onClose != nil {
+		c.onClose()
+	}
+
+}
+
+func (c *Context) SetOnClose(f func() error) {
+	c.onClose = f
 }
