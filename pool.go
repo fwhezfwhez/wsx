@@ -53,7 +53,8 @@ func (p *Pool) Online(username string, c *Context) {
 	//if p.beforeOnline != nil {
 	//	p.beforeOnline(c)
 	//}
-	p.pool.Set(username, c.Clone())
+	cCopy := c.Clone()
+	p.pool.Set(username, &cCopy)
 	// *(c.username) = username
 
 	if p.afterOnline != nil {

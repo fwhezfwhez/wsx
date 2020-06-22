@@ -34,6 +34,12 @@ func NewMux() *Mux {
 
 // 基于messageID添加路由
 func (m *Mux) AddMessageIDHandler(messageID int, handlers ... func(c *Context)) error {
+	for _, v := range ForbidenServiceMessageIDs {
+		if messageID == int(v) {
+			return errorx.NewFromStringf("messageID '%d' is not allowed used in production.", v)
+		}
+	}
+
 	if m.readOnly == false {
 		_, file, line, _ := runtime.Caller(1)
 		routeInfo := Route{
@@ -69,10 +75,9 @@ func (m *Mux) AddURLPatternHandler(urlPattern string, handlers ... func(c *Conte
 	if m.readOnly == false {
 		_, file, line, _ := runtime.Caller(1)
 		routeInfo := Route{
-			Whereis:   []string{fmt.Sprintf("%s:%d", file, line)},
+			Whereis:    []string{fmt.Sprintf("%s:%d", file, line)},
 			URLPattern: urlPattern,
 		}
-
 
 		h, ok := m.urlPatternMux[urlPattern]
 		if ok {

@@ -65,18 +65,16 @@ func HandleMiddleware(c *Context, mux Mux) error {
 			}
 		}
 
-
-		contentType, exist, e :=headerGetString(header, HEADER_CONTENT_TYPE_KEY)
-		if e!=nil {
+		contentType, exist, e := headerGetString(header, HEADER_CONTENT_TYPE_KEY)
+		if e != nil {
 			return errorx.Wrap(e)
 		}
 		if !exist || v == CONTENT_TYPE_JSON {
-             c.contentType = CONTENT_TYPE_JSON
+			c.contentType = CONTENT_TYPE_JSON
 		} else {
 			c.contentType = contentType
 		}
 	}
-
 
 	if len(handlers) > 0 {
 		c.handlers = append(c.handlers, handlers ...)
@@ -111,3 +109,6 @@ func headerGetString(header map[string]interface{}, key string) (string, bool, e
 	return value, exist, nil
 }
 
+func IsSerial(messageID int32) bool {
+	return messageID == SERIAL
+}

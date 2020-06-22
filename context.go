@@ -99,12 +99,17 @@ func (c *Context) JSONUrlPattern(v interface{}) error {
 	if e != nil {
 		return errorx.Wrap(e)
 	}
+
 	func() {
 		c.l.Lock()
 		defer c.l.Unlock()
 		c.Conn.WriteMessage(websocket.BinaryMessage, res)
 	}()
 	return nil
+}
+
+func (c *Context) JSONSetUrlPattern(urlPattern string, v interface{}) error {
+	return c.jsonUrlPattern(0, urlPattern, v)
 }
 
 func (c *Context) jsonUrlPattern(messageID int, urlPattern string, v interface{}) error {
@@ -115,6 +120,7 @@ func (c *Context) jsonUrlPattern(messageID int, urlPattern string, v interface{}
 	res, e := PackWithMarshallerAndBody(Message{
 		MessageID: int32(messageID),
 		Header: map[string]interface{}{
+			HEADER_ROUTER_KEY:            HEADER_ROUTER_TYPE_URL_PATTERN,
 			HEADER_URL_PATTERN_VALUE_KEY: urlPattern,
 		},
 	}, buf)
@@ -214,10 +220,15 @@ func (c *Context) SetUsername(username string) {
 	*(c.username) = username
 }
 func (c *Context) Username() string {
+
 	if c.username == nil {
 		return ""
 	}
 	return *c.username
+}
+
+func (c *Context) GetUsername() string {
+	return c.Username()
 }
 
 func (c *Context) RecvHeartbeat() {
@@ -234,7 +245,7 @@ func (c *Context) SpyingOnHeartbeat() {
 	L:
 		for {
 			select {
-			case <-time.After(10 * time.Second):
+			case <-time.After(45 * time.Second):
 				c.Close()
 				Printf("%s未收到心跳，自动关闭", c.Username())
 				break L
