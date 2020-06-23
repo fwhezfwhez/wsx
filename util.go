@@ -1,6 +1,7 @@
 package wsx
 
 import (
+	"fmt"
 	"github.com/fwhezfwhez/errorx"
 )
 
@@ -111,4 +112,8 @@ func headerGetString(header map[string]interface{}, key string) (string, bool, e
 
 func IsSerial(messageID int32) bool {
 	return messageID == SERIAL
+}
+
+func GetChanelUsername(chanel string, username string) string {
+	return fmt.Sprintf("%s:%s", chanel, username)
 }
