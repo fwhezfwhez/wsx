@@ -245,7 +245,7 @@ func (c *Context) SpyingOnHeartbeat() {
 	L:
 		for {
 			select {
-			case <-time.After(45 * time.Second):
+			case <-time.After(10 * time.Second):
 				c.Close()
 				Printf("%s未收到心跳，自动关闭", c.Username())
 				break L

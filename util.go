@@ -1,8 +1,10 @@
 package wsx
 
 import (
+	"crypto/md5"
 	"fmt"
 	"github.com/fwhezfwhez/errorx"
+	"strings"
 )
 
 func HandleMiddleware(c *Context, mux Mux) error {
@@ -116,4 +118,11 @@ func IsSerial(messageID int32) bool {
 
 func GetChanelUsername(chanel string, username string) string {
 	return fmt.Sprintf("%s:%s", chanel, username)
+}
+
+func MD5(rawMsg string) string {
+	data := []byte(rawMsg)
+	has := md5.Sum(data)
+	md5str1 := fmt.Sprintf("%x", has)
+	return strings.ToUpper(md5str1)
 }
