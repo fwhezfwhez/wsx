@@ -99,32 +99,29 @@ func (p *PoolV2) Offline(chanel string, username string) error {
 }
 
 // p.IsOnline("fengtao")
-func (p *PoolV2) IsOnline(username string) (*Context, bool) {
-	ctx, exist := p.pool.Get(username)
+func (p *PoolV2) IsOnline(username string) (*UserConn, bool, error) {
+	ucI, exist := p.pool.Get(username)
 	if !exist {
-		return nil, false
+		return nil, false, nil
 	}
-	return ctx.(*Context), true
-}
-
-// p.IsOnline("fengtao")
-func (p *PoolV2) IsOnlineWithChanel(chanel string, username string) (*Context, bool) {
-	key := GetChanelUsername(chanel, username)
-	ctx, exist := p.pool.Get(key)
-	if !exist {
-		return nil, false
+	uc, ok := ucI.(*UserConn)
+	if !ok {
+		return nil, false, errorx.NewFromStringf("wsx.PoolV2 requires value typed '*wsx.UserConn', but get '%s'", reflect.TypeOf(ucI).Name())
 	}
-	return ctx.(*Context), true
+	return uc, true, nil
 }
 
 // 公用发送消息模版
 func (p *PoolV2) CommonSend(username string, messageID int, header H, v interface{}, marshaller Marshaller) error {
-	ctx, online := p.IsOnline(username)
+	uc, online, e := p.IsOnline(username)
+	if e != nil {
+		return errorx.Wrap(e)
+	}
 	if !online {
 		return ErrNotOnline
 	}
-	if ctx == nil {
-		return errorx.NewFromStringf("username '%s' is online but ctx is nil", username)
+	if uc == nil {
+		return errorx.NewFromStringf("username '%s' is online but uc is nil", username)
 	}
 
 	buf, e := PackWithMarshaller(Message{
@@ -136,7 +133,7 @@ func (p *PoolV2) CommonSend(username string, messageID int, header H, v interfac
 		return errorx.Wrap(e)
 	}
 
-	return errorx.Wrap(ctx.WriteMessage(buf))
+	return errorx.Wrap(uc.Write(buf))
 }
 
 // p.Send("fwhez", "/user/", wsx.H{"message": "welcome"})

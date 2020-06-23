@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f546fa88-2788-46d2-b86b-5a0028d3dba7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pool-v2.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-conn.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrap-conn.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11111/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11111/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AutoStruct/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoStruct/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AutoStruct/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoStruct/main_test.go" afterDir="false" />
@@ -664,8 +661,8 @@
       <change beforePath="$PROJECT_DIR$/../websocketx/wsx/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/../websocketx/wsx/util.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../websocketx/wsx/wsx.go" beforeDir="false" afterPath="$PROJECT_DIR$/../websocketx/wsx/wsx.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/context.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constant.go" beforeDir="false" afterPath="$PROJECT_DIR$/constant.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pool-v2.go" beforeDir="false" afterPath="$PROJECT_DIR$/pool-v2.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xormTool" beforeDir="false" afterPath="$PROJECT_DIR$/../xormTool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xyx_err_srv/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xyx_err_srv/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xyx_err_srv/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xyx_err_srv/.idea/workspace.xml" afterDir="false" />
@@ -713,25 +710,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="35" />
+          <entry key="go" value="36" />
           <entry key="md" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="35" />
+          <entry key="Go" value="36" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="7757" />
+          <entry key="go" value="8063" />
           <entry key="md" value="86" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="7757" />
+          <entry key="Go" value="8063" />
           <entry key="PLAIN_TEXT" value="86" />
         </counts>
       </usages-collector>
@@ -744,20 +741,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/context.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="247" column="34" lean-forward="true" selection-start-line="247" selection-start-column="34" selection-end-line="247" selection-end-column="34" />
+            <state relative-caret-position="5681">
+              <caret line="240" column="1" lean-forward="true" selection-start-line="240" selection-start-column="1" selection-end-line="240" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pool-v2.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="140" column="71" lean-forward="true" selection-start-line="140" selection-start-column="71" selection-end-line="140" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pool-v2.go">
+        <entry file="file://$PROJECT_DIR$/constant.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-662">
-              <caret line="84" column="35" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
+            <state relative-caret-position="312">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -834,15 +840,15 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pool_test.go" />
         <option value="$PROJECT_DIR$/logger.go" />
-        <option value="$PROJECT_DIR$/constant.go" />
         <option value="$PROJECT_DIR$/mux.go" />
         <option value="$PROJECT_DIR$/pool.go" />
         <option value="$PROJECT_DIR$/util.go" />
         <option value="$PROJECT_DIR$/connection.go" />
         <option value="$PROJECT_DIR$/wrap-conn.go" />
         <option value="$PROJECT_DIR$/user-conn.go" />
-        <option value="$PROJECT_DIR$/pool-v2.go" />
         <option value="$PROJECT_DIR$/context.go" />
+        <option value="$PROJECT_DIR$/constant.go" />
+        <option value="$PROJECT_DIR$/pool-v2.go" />
       </list>
     </option>
   </component>
@@ -1114,13 +1120,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/constant.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mux.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -1152,17 +1151,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pool-v2.go">
+    <entry file="file://$PROJECT_DIR$/context.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-662">
-          <caret line="84" column="35" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
+        <state relative-caret-position="5681">
+          <caret line="240" column="1" lean-forward="true" selection-start-line="240" selection-start-column="1" selection-end-line="240" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/context.go">
+    <entry file="file://$PROJECT_DIR$/constant.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="247" column="34" lean-forward="true" selection-start-line="247" selection-start-column="34" selection-end-line="247" selection-end-column="34" />
+        <state relative-caret-position="312">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pool-v2.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="140" column="71" lean-forward="true" selection-start-line="140" selection-start-column="71" selection-end-line="140" selection-end-column="71" />
         </state>
       </provider>
     </entry>

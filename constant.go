@@ -12,6 +12,7 @@ const (
 	SERIAL = 2020
 )
 
+
 var ForbidenServiceMessageIDs = []int32{
 	SERIAL,
 }
