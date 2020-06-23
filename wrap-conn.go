@@ -14,9 +14,10 @@ type WrapConn struct {
 	l         *sync.RWMutex
 }
 
-func NewWrapConn(con *websocket.Conn) *WrapConn {
-	return &WrapConn{
-		SessionId: MD5(strconv.FormatInt(time.Now().UnixNano(), 10)),
+func NewWrapConn(con *websocket.Conn) (string, *WrapConn) {
+	sessionID := MD5(strconv.FormatInt(time.Now().UnixNano(), 10))
+	return sessionID, &WrapConn{
+		SessionId: sessionID,
 		conn:      con,
 		l:         &sync.RWMutex{},
 	}

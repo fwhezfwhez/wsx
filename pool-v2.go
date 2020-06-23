@@ -60,6 +60,7 @@ func (p *PoolV2) Online(username string, chanel string, wrapConn *WrapConn) erro
 	if !exist {
 		uc = NewUserConn(username)
 		uc.AddChanelConn(chanel, wrapConn)
+		p.pool.Set(username, uc)
 		return nil
 	} else {
 		var cantransfer bool
@@ -75,9 +76,14 @@ func (p *PoolV2) Online(username string, chanel string, wrapConn *WrapConn) erro
 }
 
 // p.Offline("fengtao")
-func (p *PoolV2) Offline(chanel string, username string) error {
+func (p *PoolV2) Offline(chanel string, username string, sessionIDs ... string) error {
 	if chanel == "" {
 		chanel = "default"
+	}
+
+	var sessionID string
+	if len(sessionIDs) > 0 {
+		sessionID = sessionIDs[0]
 	}
 
 	ucI, exist := p.pool.Get(username)
@@ -90,13 +96,22 @@ func (p *PoolV2) Offline(chanel string, username string) error {
 		return errorx.NewFromStringf("wsx.PoolV2 requires value typed '*wsx.UserConn', but got '%s'", reflect.TypeOf(ucI).Name())
 	}
 
-	n := uc.CloseChanel(chanel)
+	var n int
+	if sessionID == "" {
+		n = uc.CloseChanel(chanel)
+	} else {
+		n = uc.CloseChanelWithSessionID(chanel, sessionID)
+	}
 
 	if n <= 0 {
 		p.pool.Delete(username)
 	}
 	return nil
 }
+
+//func (p *PoolV2) OfflineSessionId(chanel string, username string, sessionId string) error {
+//
+//}
 
 // p.IsOnline("fengtao")
 func (p *PoolV2) IsOnline(username string) (*UserConn, bool, error) {

@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"github.com/fwhezfwhez/errorx"
 	"github.com/gorilla/websocket"
-	"runtime/debug"
 	"sync"
 	"time"
 )
@@ -20,6 +19,8 @@ type Context struct {
 	username             *string
 	heartbeatChan        chan struct{}
 	onClose              func() error
+	chanel               *string
+	sessionID            *string
 
 	// 临时值: 每次到达一个请求，都会Clone一个Context，复用了它的全局值，以下值都会重置
 	handlers          []func(c *Context)
@@ -32,11 +33,15 @@ type Context struct {
 
 func NewContext(conn *websocket.Conn) *Context {
 	var u string
+	var chanel string
+	var sessionID string
 	return &Context{
 		Conn:                 conn,
 		l:                    &sync.RWMutex{},
 		PerConnectionContext: &sync.Map{},
 		username:             &u,
+		chanel:               &chanel,
+		sessionID:            &sessionID,
 
 		heartbeatChan:     make(chan struct{}, 5),
 		PerRequestContext: &sync.Map{},
@@ -167,6 +172,8 @@ func (c *Context) Clone() Context {
 		username:             c.username,
 		heartbeatChan:        c.heartbeatChan,
 		onClose:              c.onClose,
+		chanel:               c.chanel,
+		sessionID:            c.sessionID,
 
 		// 重置临时值
 		PerRequestContext: &sync.Map{},
@@ -231,12 +238,34 @@ func (c *Context) GetUsername() string {
 	return c.Username()
 }
 
+func (c *Context) SetChanel(chanel string) {
+	*(c.chanel) = chanel
+}
+
+func (c *Context) GetChanel() string {
+	if c.chanel == nil {
+		return ""
+	}
+	return *c.chanel
+}
+
+func (c *Context) SetSessionID(sessionID string) {
+	*(c.sessionID) = sessionID
+}
+
+func (c *Context) GetSessionID() string {
+	if c.sessionID == nil {
+		return ""
+	}
+	return *c.sessionID
+}
+
 func (c *Context) RecvHeartbeat() {
 	select {
 	case <-time.After(15 * time.Second):
-		Printf("heartbeat chan is locked: \n %s", debug.Stack())
+		// Printf("heartbeat chan is locked: \n %s", debug.Stack())
 	case c.heartbeatChan <- struct{}{}:
-		Printf("%s收到心跳", c.Username())
+		// Printf("%s收到心跳", c.Username())
 	}
 }
 
