@@ -43,17 +43,17 @@ func gorilla() {
 				fmt.Println(errorx.Wrap(e).Error())
 				return
 			}
-			//fmt.Println("header:", header)
+			// fmt.Println("header:", header)
 			fmt.Println("body:", string(body))
 		}
 	}()
 
-	buf, e := wsx.Pack(12, wsx.H{
+	buf, e := wsx.Pack(0, wsx.H{
 		"Router-Type":       "URL_PATTERN",
 		"URL-Pattern-Value": "/login/",
 	}, wsx.H{
 		"username": "fengtao",
-		"password": "qq",
+		"chanel":   "vx",
 	})
 	if e != nil {
 		panic(e)

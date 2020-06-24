@@ -2,6 +2,7 @@ package wsx
 
 import (
 	"encoding/json"
+	"fmt"
 	"github.com/fwhezfwhez/errorx"
 	"sync"
 )
@@ -25,14 +26,27 @@ func NewUserConn(username string) *UserConn {
 func (uc *UserConn) Write(buf []byte) error {
 	uc.l.Lock()
 	defer uc.l.Unlock()
+
 	var er error
 	for k, _ := range uc.conns {
+		fmt.Println(errorx.NewFromStringf("detail-KEY:\n key: %s value: %p", k, uc.conns[k].conn))
 		if e := uc.conns[k].Write(buf); e != nil {
 			er = errorx.GroupErrors(errorx.Wrap(e))
 			continue
 		}
 	}
 	return er
+}
+
+func (uc *UserConn) WriteChanel(chanel string, buf []byte) error {
+	uc.l.Lock()
+	defer uc.l.Unlock()
+
+	con, ok := uc.conns[chanel]
+	if !ok {
+		return nil
+	}
+	return con.Write(buf)
 }
 
 // Close all connections
@@ -122,5 +136,25 @@ func (uc *UserConn) JSONUrlPattern(urlPattern string, v interface{}) error {
 	}
 
 	uc.Write(res)
+	return nil
+}
+
+func (uc *UserConn) JSONUrlPatternWithChanel(chanel string, urlPattern string, v interface{}) error {
+	buf, e := json.Marshal(v)
+	if e != nil {
+		return errorx.Wrap(e)
+	}
+	res, e := PackWithMarshallerAndBody(Message{
+		MessageID: int32(0),
+		Header: map[string]interface{}{
+			HEADER_ROUTER_KEY:            HEADER_ROUTER_TYPE_URL_PATTERN,
+			HEADER_URL_PATTERN_VALUE_KEY: urlPattern,
+		},
+	}, buf)
+	if e != nil {
+		return errorx.Wrap(e)
+	}
+
+	uc.WriteChanel(chanel, res)
 	return nil
 }
