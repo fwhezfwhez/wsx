@@ -15,12 +15,12 @@ type Context struct {
 	Conn *websocket.Conn
 	l    *sync.RWMutex
 
-	PerConnectionContext *sync.Map
-	username             *string
-	heartbeatChan        chan struct{}
-	onClose              func() error
-	chanel               *string
-	sessionID            *string
+	PerConnectionContext *sync.Map     // 连接域内的map
+	username             *string       // 连接所属的username
+	heartbeatChan        chan struct{} // 连接所属的心跳chan
+	onClose              func() error  // close时的回调
+	chanel               *string       // 连接标记的渠道，用于多端登录
+	sessionID            *string       // 该连接的sessionID,在wrapConn时生成
 
 	// 临时值: 每次到达一个请求，都会Clone一个Context，复用了它的全局值，以下值都会重置
 	handlers          []func(c *Context)
@@ -90,6 +90,17 @@ func (c *Context) JSON(messageID int, v interface{}) error {
 }
 
 func (c *Context) JSONUrlPattern(v interface{}) error {
+	var vh H
+	switch v.(type) {
+	case H:
+		vh = v.(H)
+		if c.GetUrlPattern() != "" {
+			vh["url_pattern"] = c.GetUrlPattern()
+			v = vh
+		}
+
+	}
+
 	buf, e := json.Marshal(v)
 	if e != nil {
 		return errorx.Wrap(e)
@@ -118,6 +129,17 @@ func (c *Context) JSONSetUrlPattern(urlPattern string, v interface{}) error {
 }
 
 func (c *Context) jsonUrlPattern(messageID int, urlPattern string, v interface{}) error {
+	var vh H
+	switch v.(type) {
+	case H:
+		vh = v.(H)
+		if urlPattern != "" {
+			vh["url_pattern"] = urlPattern
+			v = vh
+		}
+
+	}
+
 	buf, e := json.Marshal(v)
 	if e != nil {
 		return errorx.Wrap(e)

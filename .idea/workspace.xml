@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f546fa88-2788-46d2-b86b-5a0028d3dba7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/example/client2/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wsx.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wsx_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11111/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11111/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AutoStruct/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoStruct/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AutoStruct/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoStruct/main_test.go" afterDir="false" />
@@ -672,7 +669,7 @@
       <change beforePath="$PROJECT_DIR$/marshaller.go" beforeDir="false" afterPath="$PROJECT_DIR$/marshaller.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mux.go" beforeDir="false" afterPath="$PROJECT_DIR$/mux.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pack.go" beforeDir="false" afterPath="$PROJECT_DIR$/pack.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-conn.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-conn.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pool-v2.go" beforeDir="false" afterPath="$PROJECT_DIR$/pool-v2.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/util.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xormTool" beforeDir="false" afterPath="$PROJECT_DIR$/../xormTool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xyx_err_srv/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xyx_err_srv/.idea/vcs.xml" afterDir="false" />
@@ -717,30 +714,31 @@
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="43" />
+          <entry key="go" value="44" />
           <entry key="md" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="43" />
+          <entry key="Go" value="44" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="9821" />
+          <entry key="go" value="9881" />
           <entry key="md" value="86" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="9821" />
+          <entry key="Go" value="9881" />
           <entry key="PLAIN_TEXT" value="86" />
         </counts>
       </usages-collector>
@@ -755,30 +753,33 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/context.go">
+        <entry file="file://$PROJECT_DIR$/pool-v2.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6474">
-              <caret line="255" column="37" selection-start-line="255" selection-start-column="37" selection-end-line="255" selection-end-column="37" />
+            <state relative-caret-position="2132">
+              <caret line="86" column="28" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pool-v2.go">
+        <entry file="file://$PROJECT_DIR$/user-conn.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1924">
-              <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+            <state relative-caret-position="442">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!block;n#Write#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/user-conn.go">
+        <entry file="file://$PROJECT_DIR$/pack.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+            <state relative-caret-position="201">
+              <caret line="113" column="3" selection-start-line="113" selection-start-column="3" selection-end-line="113" selection-end-column="3" />
               <folding>
-                <element signature="n#!!block;n#Write#0" />
+                <element signature="n#!!block;n#PackWithMarshaller#0" />
               </folding>
             </state>
           </provider>
@@ -817,8 +818,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../vx-kf/control/user-pool/userPoolService/ws.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2340">
-              <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
+            <state relative-caret-position="2756">
+              <caret line="123" column="35" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -870,6 +871,7 @@
       <find>Rec</find>
       <find>JSON</find>
       <find>Online</find>
+      <find>[4]</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="E:/go1.12" />
@@ -894,7 +896,6 @@
         <option value="$PROJECT_DIR$/util.go" />
         <option value="$PROJECT_DIR$/connection.go" />
         <option value="$PROJECT_DIR$/constant.go" />
-        <option value="$PROJECT_DIR$/pool-v2.go" />
         <option value="$PROJECT_DIR$/../vx-kf/control/user-pool/userPoolService/ws.go" />
         <option value="$PROJECT_DIR$/context.go" />
         <option value="$PROJECT_DIR$/wrap-conn.go" />
@@ -904,6 +905,7 @@
         <option value="$PROJECT_DIR$/wsx.go" />
         <option value="$PROJECT_DIR$/example/server/main.go" />
         <option value="$PROJECT_DIR$/user-conn.go" />
+        <option value="$PROJECT_DIR$/pool-v2.go" />
       </list>
     </option>
   </component>
@@ -930,29 +932,6 @@
             <path>
               <item name="wsx" type="b2602c69:ProjectViewProjectNode" />
               <item name="wsx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wsx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wsx" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wsx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wsx" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wsx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wsx" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="client2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wsx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wsx" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1052,8 +1031,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17430703" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17590618" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1065,7 +1045,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.26978818" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.26978818" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1101,16 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pack.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!block;n#PackWithMarshaller#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1214,8 +1184,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pool-v2.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1924">
-          <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+        <state relative-caret-position="2132">
+          <caret line="86" column="28" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-conn.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!block;n#Write#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1245,8 +1225,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../vx-kf/control/user-pool/userPoolService/ws.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2340">
-          <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
+        <state relative-caret-position="2756">
+          <caret line="123" column="35" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1271,12 +1251,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-conn.go">
+    <entry file="file://$PROJECT_DIR$/pack.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+        <state relative-caret-position="201">
+          <caret line="113" column="3" selection-start-line="113" selection-start-column="3" selection-end-line="113" selection-end-column="3" />
           <folding>
-            <element signature="n#!!block;n#Write#0" />
+            <element signature="n#!!block;n#PackWithMarshaller#0" />
           </folding>
         </state>
       </provider>

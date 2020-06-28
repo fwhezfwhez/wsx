@@ -49,6 +49,7 @@ func (p *PoolV2) SetAfterOffline(f func(c *Context)) {
 
 // 上线
 // p.Online("fengtao")
+// 对同渠道同用户多次调用时，会将已存在的过去连接关闭掉，即单用户单渠道仅限1个连接。
 func (p *PoolV2) Online(username string, chanel string, wrapConn *WrapConn) error {
 	if chanel == "" {
 		chanel = "default"
@@ -76,6 +77,7 @@ func (p *PoolV2) Online(username string, chanel string, wrapConn *WrapConn) erro
 }
 
 // p.Offline("fengtao")
+//
 func (p *PoolV2) Offline(chanel string, username string, sessionIDs ... string) error {
 	if chanel == "" {
 		chanel = "default"
