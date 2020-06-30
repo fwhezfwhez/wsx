@@ -50,6 +50,8 @@ func NewContext(conn *websocket.Conn) *Context {
 	}
 }
 
+// Bind reads from stream, not from reader. It means this api can call anywhere without times limit.
+// This is the promotion comparing to gin.Context.Bind()
 func (c *Context) Bind(dest interface{}) error {
 	body, e := BodyBytesOf(c.Stream)
 	if e != nil {
