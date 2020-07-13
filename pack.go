@@ -116,7 +116,7 @@ func HeaderLengthOf(stream []byte) (int32, error) {
 // [4]byte -- headerLength       fixed_size,binary big endian encode
 // [4]byte -- bodyLength         fixed_size,binary big endian encode
 // []byte -- header              marshal by json
-// []byte -- body                marshal by marshaller
+// []byte -- body                marshal by marshaller/
 func PackWithMarshaller(message Message, marshaller Marshaller) ([]byte, error) {
 	if marshaller == nil {
 		marshaller = JsonMarshaller{}

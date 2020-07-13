@@ -21,6 +21,7 @@ type Context struct {
 	onClose              func() error  // close时的回调
 	chanel               *string       // 连接标记的渠道，用于多端登录
 	sessionID            *string       // 该连接的sessionID,在wrapConn时生成
+	state                *int          // 登录状态, 1在线，2离线，3忙碌
 
 	// 临时值: 每次到达一个请求，都会Clone一个Context，复用了它的全局值，以下值都会重置
 	handlers          []func(c *Context)
@@ -35,6 +36,7 @@ func NewContext(conn *websocket.Conn) *Context {
 	var u string
 	var chanel string
 	var sessionID string
+	var state int
 	return &Context{
 		Conn:                 conn,
 		l:                    &sync.RWMutex{},
@@ -42,6 +44,7 @@ func NewContext(conn *websocket.Conn) *Context {
 		username:             &u,
 		chanel:               &chanel,
 		sessionID:            &sessionID,
+		state:                &state,
 
 		heartbeatChan:     make(chan struct{}, 5),
 		PerRequestContext: &sync.Map{},
@@ -92,38 +95,7 @@ func (c *Context) JSON(messageID int, v interface{}) error {
 }
 
 func (c *Context) JSONUrlPattern(v interface{}) error {
-	var vh H
-	switch v.(type) {
-	case H:
-		vh = v.(H)
-		if c.GetUrlPattern() != "" {
-			vh["url_pattern"] = c.GetUrlPattern()
-			v = vh
-		}
-
-	}
-
-	buf, e := json.Marshal(v)
-	if e != nil {
-		return errorx.Wrap(e)
-	}
-	res, e := PackWithMarshallerAndBody(Message{
-		MessageID: int32(0),
-		Header: map[string]interface{}{
-			HEADER_ROUTER_KEY:            HEADER_ROUTER_TYPE_URL_PATTERN,
-			HEADER_URL_PATTERN_VALUE_KEY: c.urlPattern,
-		},
-	}, buf)
-	if e != nil {
-		return errorx.Wrap(e)
-	}
-
-	func() {
-		c.l.Lock()
-		defer c.l.Unlock()
-		c.Conn.WriteMessage(websocket.BinaryMessage, res)
-	}()
-	return nil
+	return c.jsonUrlPattern(0, c.urlPattern, v)
 }
 
 func (c *Context) JSONSetUrlPattern(urlPattern string, v interface{}) error {
@@ -198,6 +170,7 @@ func (c *Context) Clone() Context {
 		onClose:              c.onClose,
 		chanel:               c.chanel,
 		sessionID:            c.sessionID,
+		state:                c.state,
 
 		// 重置临时值
 		PerRequestContext: &sync.Map{},
@@ -300,11 +273,11 @@ func (c *Context) SpyingOnHeartbeat() {
 			select {
 			case <-time.After(10 * time.Second):
 				c.Close()
-				Printf("%s未收到心跳，自动关闭", c.Username())
+				Debugf("%s未收到心跳，自动关闭", c.Username())
 				break L
 			case <-c.heartbeatChan:
 				// do nothing
-				Printf("%s收到心跳，自动续约", c.Username())
+				Debugf("%s收到心跳，自动续约", c.Username())
 			}
 		}
 	}()
@@ -327,4 +300,21 @@ func (c *Context) Close() {
 
 func (c *Context) SetOnClose(f func() error) {
 	c.onClose = f
+}
+
+func (c *Context) SetOnlineState() {
+	*c.state = 1
+}
+func (c *Context) SetOfflineState() {
+	*c.state = 2
+}
+func (c *Context) SetBusyState() {
+	*c.state = 3
+}
+
+func (c *Context) GetState() int {
+	if c.state == nil {
+		return 0
+	}
+	return *c.state
 }

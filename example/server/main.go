@@ -57,5 +57,5 @@ func ws() {
 
 	mux.LockWrite()
 
-	wsx.ListenAndServe(":8111", mux, pool)
+	wsx.ListenAndServe("/kf",":8111", mux, pool)
 }

@@ -7,6 +7,7 @@ import (
 )
 
 // 用户池
+// PoolV2 只能存放*wsx.UserConn
 type PoolV2 struct {
 	pool MapI
 

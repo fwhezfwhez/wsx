@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f546fa88-2788-46d2-b86b-5a0028d3dba7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/logger_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toolkit.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11111/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11111/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AutoStruct/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoStruct/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AutoStruct/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoStruct/main_test.go" afterDir="false" />
@@ -666,11 +668,17 @@
       <change beforePath="$PROJECT_DIR$/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/context.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/example/client/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/example/server/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/logger.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/marshaller.go" beforeDir="false" afterPath="$PROJECT_DIR$/marshaller.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/message.go" beforeDir="false" afterPath="$PROJECT_DIR$/message.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mux.go" beforeDir="false" afterPath="$PROJECT_DIR$/mux.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pack.go" beforeDir="false" afterPath="$PROJECT_DIR$/pack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pool-v2.go" beforeDir="false" afterPath="$PROJECT_DIR$/pool-v2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pool.go" beforeDir="false" afterPath="$PROJECT_DIR$/pool.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pool_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pool_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wsx.go" beforeDir="false" afterPath="$PROJECT_DIR$/wsx.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wsx_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/wsx_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xormTool" beforeDir="false" afterPath="$PROJECT_DIR$/../xormTool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xyx_err_srv/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xyx_err_srv/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xyx_err_srv/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xyx_err_srv/.idea/workspace.xml" afterDir="false" />
@@ -707,38 +715,38 @@
     <session id="-762233866">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="2" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.24" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="49" />
-          <entry key="md" value="2" />
+          <entry key="go" value="74" />
+          <entry key="md" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="49" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Go" value="74" />
+          <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="10122" />
+          <entry key="go" value="14442" />
           <entry key="md" value="86" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="10122" />
+          <entry key="Go" value="14442" />
           <entry key="PLAIN_TEXT" value="86" />
         </counts>
       </usages-collector>
@@ -752,103 +760,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/context.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1872">
-              <caret line="78" column="37" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
+            <state relative-caret-position="389">
+              <caret line="171" column="42" lean-forward="true" selection-start-line="171" selection-start-column="42" selection-end-line="171" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wsx.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="80" selection-start-line="80" selection-end-line="81" />
               <folding>
-                <element signature="n#!!block;n#JSONUrlPattern#0" />
-                <element signature="n#!!block;n#JSONSetUrlPattern#0" />
-                <element signature="n#!!block;n#jsonUrlPattern#0" />
+                <element signature="e#13#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pack.go">
+        <entry file="file://$PROJECT_DIR$/pool_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="364">
+              <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
               <folding>
-                <element signature="n#!!block;n#PackWithMarshaller#0" />
-                <element signature="n#!!block;n#MessageIDOf#0" />
-                <element signature="n#!!block;n#HeaderOf#0" />
-                <element signature="n#!!block;n#HeaderBytesOf#0" />
+                <element signature="e#13#45#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/message.go">
+        <entry file="file://$PROJECT_DIR$/util.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1794">
-              <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mux.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="3094">
+              <caret line="124" column="14" selection-start-line="124" selection-start-column="14" selection-end-line="124" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routeInfo.go">
+        <entry file="file://$PROJECT_DIR$/pool.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            <state relative-caret-position="1950">
+              <caret line="80" column="14" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wrap-conn.go">
+        <entry file="file://$PROJECT_DIR$/h.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+            <state relative-caret-position="338">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../vx-kf/control/user-pool/userPoolService/ws.go">
+        <entry file="file://$PROJECT_DIR$/logger.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2756">
-              <caret line="126" column="35" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="35" />
+            <state relative-caret-position="-277">
+              <caret line="22" column="54" lean-forward="true" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/server/main.go">
+        <entry file="file://$PROJECT_DIR$/pool-v2.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+            <state relative-caret-position="442">
+              <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/client/main.go">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1248">
-              <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+            <state relative-caret-position="364">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/client2/main.go">
+        <entry file="file://$PROJECT_DIR$/logger_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1274">
-              <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
+            <state relative-caret-position="208">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -873,10 +876,11 @@
       <find>Rec</find>
       <find>JSON</find>
       <find>Online</find>
-      <find>[4]</find>
       <find>zonst#448</find>
       <find>url_pattern</find>
       <find>Bind</find>
+      <find>BodyByte</find>
+      <find>[4]</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="E:/go1.12" />
@@ -892,25 +896,27 @@
         <option value="$PROJECT_DIR$/marshaller.go" />
         <option value="$PROJECT_DIR$/h.go" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/pool_test.go" />
-        <option value="$PROJECT_DIR$/logger.go" />
         <option value="$PROJECT_DIR$/mux.go" />
-        <option value="$PROJECT_DIR$/pool.go" />
-        <option value="$PROJECT_DIR$/util.go" />
         <option value="$PROJECT_DIR$/connection.go" />
         <option value="$PROJECT_DIR$/constant.go" />
         <option value="$PROJECT_DIR$/../vx-kf/control/user-pool/userPoolService/ws.go" />
         <option value="$PROJECT_DIR$/wrap-conn.go" />
-        <option value="$PROJECT_DIR$/wsx_test.go" />
         <option value="$PROJECT_DIR$/example/client/main.go" />
         <option value="$PROJECT_DIR$/example/client2/main.go" />
-        <option value="$PROJECT_DIR$/wsx.go" />
-        <option value="$PROJECT_DIR$/example/server/main.go" />
         <option value="$PROJECT_DIR$/user-conn.go" />
-        <option value="$PROJECT_DIR$/pool-v2.go" />
-        <option value="$PROJECT_DIR$/context.go" />
-        <option value="$PROJECT_DIR$/pack.go" />
         <option value="$PROJECT_DIR$/message.go" />
+        <option value="$PROJECT_DIR$/pack.go" />
+        <option value="$PROJECT_DIR$/pool.go" />
+        <option value="$PROJECT_DIR$/pool-v2.go" />
+        <option value="$PROJECT_DIR$/example/server/main.go" />
+        <option value="$PROJECT_DIR$/wsx_test.go" />
+        <option value="$PROJECT_DIR$/logger_test.go" />
+        <option value="$PROJECT_DIR$/toolkit.go" />
+        <option value="$PROJECT_DIR$/util.go" />
+        <option value="$PROJECT_DIR$/wsx.go" />
+        <option value="$PROJECT_DIR$/pool_test.go" />
+        <option value="$PROJECT_DIR$/logger.go" />
+        <option value="$PROJECT_DIR$/context.go" />
       </list>
     </option>
   </component>
@@ -920,7 +926,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1024" />
     <option name="height" value="744" />
   </component>
@@ -947,7 +953,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tcpx" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -969,7 +975,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (1)">
+  <component name="RunManager" selected="Go Test.TestLoggerColor in wsx">
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="wsx" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -997,6 +1003,17 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="TestLoggerColor in wsx" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="wsx" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="wsx" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestLoggerColor$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestPack in wsx" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="wsx" />
       <working_directory value="$PROJECT_DIR$" />
@@ -1013,9 +1030,11 @@
       <item itemvalue="Go Build.go build main.go (1)" />
       <item itemvalue="Go Test.TestPack in wsx" />
       <item itemvalue="Go Build.go build main.go (2)" />
+      <item itemvalue="Go Test.TestLoggerColor in wsx" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestLoggerColor in wsx" />
         <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Build.go build main.go (2)" />
         <item itemvalue="Go Build.go build main.go" />
@@ -1024,32 +1043,53 @@
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestPack_in_wsx - 2020.06.11 at 16h 39m 24s.xml">
-      <configuration name="TestPack in wsx" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestLoggerColor_in_wsx - 2020.07.03 at 16h 03m 55s.xml">
+      <configuration name="TestLoggerColor in wsx" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestPack_in_wsx - 2020.06.11 at 16h 42m 52s.xml">
-      <configuration name="TestPack in wsx" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestLoggerColor_in_wsx - 2020.07.03 at 16h 04m 41s.xml">
+      <configuration name="TestLoggerColor in wsx" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestPack_in_wsx - 2020.06.11 at 16h 43m 51s.xml">
-      <configuration name="TestPack in wsx" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestLoggerColor_in_wsx - 2020.07.03 at 16h 05m 21s.xml">
+      <configuration name="TestLoggerColor in wsx" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestLoggerColor_in_wsx - 2020.07.03 at 16h 05m 51s.xml">
+      <configuration name="TestLoggerColor in wsx" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestLoggerColor_in_wsx - 2020.07.03 at 16h 07m 46s.xml">
+      <configuration name="TestLoggerColor in wsx" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestLoggerColor_in_wsx - 2020.07.03 at 16h 08m 16s.xml">
+      <configuration name="TestLoggerColor in wsx" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestLoggerColor_in_wsx - 2020.07.03 at 16h 13m 26s.xml">
+      <configuration name="TestLoggerColor in wsx" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestLoggerColor_in_wsx - 2020.07.03 at 16h 15m 31s.xml">
+      <configuration name="TestLoggerColor in wsx" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestLoggerColor_in_wsx - 2020.07.03 at 16h 16m 13s.xml">
+      <configuration name="TestLoggerColor in wsx" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestLoggerColor_in_wsx - 2020.07.03 at 16h 16m 29s.xml">
+      <configuration name="TestLoggerColor in wsx" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1024" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23029046" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2771855" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32998884" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32998884" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39910814" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.17606838" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.21850613" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1085,34 +1125,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/h.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logger.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/marshaller.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -1124,94 +1136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
           <caret line="372" column="22" lean-forward="true" selection-start-line="372" selection-start-column="22" selection-end-line="372" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="124" column="24" lean-forward="true" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pool_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/constant.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pool.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pool-v2.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2132">
-          <caret line="86" column="28" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-conn.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wsx.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wsx_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/context.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1872">
-          <caret line="78" column="37" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
-          <folding>
-            <element signature="n#!!block;n#JSONUrlPattern#0" />
-            <element signature="n#!!block;n#JSONSetUrlPattern#0" />
-            <element signature="n#!!block;n#jsonUrlPattern#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pack.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!block;n#PackWithMarshaller#0" />
-            <element signature="n#!!block;n#MessageIDOf#0" />
-            <element signature="n#!!block;n#HeaderOf#0" />
-            <element signature="n#!!block;n#HeaderBytesOf#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1229,31 +1153,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wrap-conn.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../vx-kf/control/user-pool/userPoolService/ws.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2756">
           <caret line="126" column="35" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/server/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/client/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1248">
-          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1266,8 +1169,177 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mux.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="372">
+          <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/client/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pack.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="162" column="18" lean-forward="true" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!block;n#PackWithMarshaller#0" />
+            <element signature="n#!!block;n#MessageIDOf#0" />
+            <element signature="n#!!block;n#HeaderOf#0" />
+            <element signature="n#!!block;n#HeaderBytesOf#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrap-conn.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-conn.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2080">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!block;n#Write#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/constant.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/go1.12/src/net/http/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="3034" column="5" selection-start-line="3034" selection-start-column="5" selection-end-line="3034" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/server/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsx_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../errorX/errorx.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="329" column="37" lean-forward="true" selection-start-line="329" selection-start-column="37" selection-end-line="329" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toolkit.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2418">
+          <caret line="99" column="16" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3094">
+          <caret line="124" column="14" selection-start-line="124" selection-start-column="14" selection-end-line="124" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pool.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1950">
+          <caret line="80" column="14" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logger_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsx.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="80" selection-start-line="80" selection-end-line="81" />
+          <folding>
+            <element signature="e#13#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pool-v2.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pool_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+          <folding>
+            <element signature="e#13#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logger.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-277">
+          <caret line="22" column="54" lean-forward="true" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/context.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="171" column="42" lean-forward="true" selection-start-line="171" selection-start-column="42" selection-end-line="171" selection-end-column="42" />
         </state>
       </provider>
     </entry>

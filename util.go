@@ -7,6 +7,8 @@ import (
 	"strings"
 )
 
+// handle c and mux
+// c has received stream and mux has routers
 func HandleMiddleware(c *Context, mux Mux) error {
 	if c.handlers == nil {
 		c.handlers = make([]func(c *Context), 0, 10)
@@ -91,6 +93,7 @@ func HandleMiddleware(c *Context, mux Mux) error {
 	return nil
 }
 
+// get key-value from a header
 func headerGetString(header map[string]interface{}, key string) (string, bool, error) {
 	var exist bool
 	var value string
@@ -112,10 +115,13 @@ func headerGetString(header map[string]interface{}, key string) (string, bool, e
 	return value, exist, nil
 }
 
+// whether messageID means serial.
+// A stream marked serial means  other requests after this serial message will wait until this stream handled
 func IsSerial(messageID int32) bool {
 	return messageID == SERIAL
 }
 
+//
 func GetChanelUsername(chanel string, username string) string {
 	return fmt.Sprintf("%s:%s", chanel, username)
 }

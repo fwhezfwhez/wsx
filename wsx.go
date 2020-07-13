@@ -1,100 +1,87 @@
 package wsx
 
 import (
-	"fmt"
-	"github.com/fwhezfwhez/errorx"
-	"github.com/gorilla/websocket"
-	"net/http"
-	"runtime/debug"
+	"context"
+	"time"
 )
 
-func ListenAndServe(port string, mux *Mux, pool *PoolV2) error {
+// refer to wsx.routeType
+const (
+	RouteTypeMessageID = HEADER_ROUTER_TYPE_MESSAGEID
+	RouteTypeUrlPattern = HEADER_ROUTER_TYPE_URL_PATTERN
+	RouteTypeAuto      = "AUTO"
+)
 
-	Mode = DEBUG
-	mux.PanicOnExistRouter()
+// wsx Object
+type Wsx struct {
+	ctx context.Context
 
+	// http Upgrade to websocket on this path
+	relPath string
 
-	var ud = &websocket.Upgrader{
-		// 解决跨域问题
-		CheckOrigin: func(r *http.Request) bool {
-			return true
-		},
-	}
-	http.HandleFunc("/kf", func(w http.ResponseWriter, r *http.Request) {
-		conn, e := ud.Upgrade(w, r, w.Header())
-		if e != nil {
-			fmt.Println(errorx.Wrap(e).Error())
-			w.WriteHeader(500)
-			w.Write([]byte(e.Error()))
-			return
-		}
-		ctx := NewContext(conn)
+	// Adding messageID routes and url-pattern routes
+	mux *Mux
 
-		// ctx.SpyingOnHeartbeat()
+	// value ranges in ["AUTO", "MESSAGE_ID","URL_PATTERN"]
+	// This value serves for wsx.Any(routeKey interface{}, handlers ... func(c *wsx.Context))
+	// `wsxSrv.Any(routeKey, handlers...)`
+	// Its default routeType is AUTO. In this case, routeKey can be int or string.
+	// If routeType is MESSAGE_ID, routeKey should be int.
+	// If routeType is URL_PATTERN, routeKey should be string.
+	routeType string
 
-		fmt.Println("请求进入:", conn.RemoteAddr())
-
-		defer conn.Close()
-
-		// 当粘包时，res存放多余的粘包块，用于给下一次读取补齐
-		var res []byte
-		for {
-			var raw []byte
-			_, message, e := conn.ReadMessage()
-			if e != nil {
-				fmt.Println(errorx.Wrap(e).Error())
-				break
-			}
-			fmt.Println("message:", message)
-			if len(res) != 0 {
-				raw = append(res, message ...)
-				res = nil
-			} else {
-				raw = message
-			}
-			fmt.Println("raw", raw)
-			stream, e := FirstBlockOfBytes(raw)
-			if e != nil {
-				fmt.Println(errorx.Wrap(e).Error())
-				break
-			}
-
-			res = raw[len(stream):]
-
-			fmt.Println(MessageIDOf(stream))
-
-			messageID, e := MessageIDOf(stream)
-			if e != nil {
-				fmt.Println(errorx.Wrap(e).Error())
-				break
-			}
-
-			if IsSerial(messageID) {
-				handleStream(stream, conn, ctx, mux)
-			} else {
-				go handleStream(stream, conn, ctx, mux)
-			}
-		}
-	})
-
-	fmt.Println("ws begin to listen", port)
-	e := http.ListenAndServe(port, nil)
-	if e != nil {
-		return errorx.Wrap(e)
-	}
-	return nil
+	// heartbeat module.
+	// Enabled by `wsxSrv.EnableHeartbeat(20 * time.Second)`
+	// whether enable heartbeat.
+	enableHeartbeat bool
+	// when enableHeartbeat = true, client should keep sending heartbeat in this interval
+	heartBeatInterval time.Duration
 }
 
-func handleStream(stream []byte, conn *websocket.Conn, ctx *Context, mux *Mux) {
-	defer func() {
-		if e := recover(); e != nil {
-			fmt.Println(fmt.Sprintf("recover from: %v, \n %s", e, debug.Stack()))
-			return
-		}
-	}()
+// NewWsxObject
+func NewWsx(relPath string) *Wsx {
+	return &Wsx{
+		relPath:   relPath,
+		mux:       NewMux(),
+		routeType: RouteTypeAuto,
+	}
+}
 
-	ctxSession := ctx.Clone()
-	ctxSession.Stream = stream
+// Op is just an empty struct to help exec config chain, like:
+// srv.Config(
+//     srv.SetRouteType(wsx.RouteTypeAuto),
+//     srv.EnableHeartbeat(15 * time.Second),
+//     ...
+// )
+type Op struct{}
 
-	HandleMiddleware(&ctxSession, *mux)
+// Config is designed to wrap all configurations.
+// However, config chain is not necessary.
+// Besides, wsx object newed by NewWsx() has its default config worked well.
+func (wsx *Wsx) Config(ops ... Op) {
+}
+
+// Set wsxSrv route type.
+// routeType only allows wsx.RouteTypeUrlPattern, wsx.RouteTypeAuto, wsx.RouterTypeMessageID
+func (wsx *Wsx) SetRouteType(routeType string) Op {
+	wsx.routeType = routeType
+	return Op{}
+}
+
+// Enable heartbeat and set its interval.
+// If client not send heartbeat buffer in this interval, server side will close the connection.
+func (wsx *Wsx) EnableHeartbeat(interval time.Duration) Op {
+	wsx.enableHeartbeat = true
+	wsx.heartBeatInterval = interval
+	return Op{}
+}
+
+// Websocket server will run at port
+func (wsx *Wsx) ListenAndServe(port string) error {
+	return listenAndServe(wsx.relPath, port, wsx)
+}
+
+// Do same as wsx.ListenAndServe.
+func (wsx *Wsx) Run(port string) error {
+	return wsx.ListenAndServe(port)
 }

@@ -8,6 +8,7 @@ import (
 )
 
 // 用户池
+// 用户池v1只存放*wsx.Context
 type Pool struct {
 	pool MapI
 
