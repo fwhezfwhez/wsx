@@ -77,7 +77,7 @@ func listenAndServe(relPath string,port string, wsx *Wsx) error {
 		}
 	})
 
-	Infof("ws begin to listen", port)
+	Infof("ws begin to listen %s", port)
 	e := http.ListenAndServe(port, nil)
 	if e != nil {
 		return errorx.Wrap(e)

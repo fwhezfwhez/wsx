@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f546fa88-2788-46d2-b86b-5a0028d3dba7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logger_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toolkit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1111/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../1111/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11111/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../11111/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AutoStruct/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoStruct/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AutoStruct/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoStruct/main_test.go" afterDir="false" />
@@ -18,19 +17,49 @@
       <change beforePath="$PROJECT_DIR$/../affecting/Affecting.go" beforeDir="false" afterPath="$PROJECT_DIR$/../affecting/Affecting.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../affecting/error-handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/../affecting/error-handler.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../affecting/module/basic/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../affecting/module/basic/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agentx/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../agentx/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../analysisx/anaylysisx.go" beforeDir="false" afterPath="$PROJECT_DIR$/../analysisx/anaylysisx.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto-generate-example/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../auto-generate-example/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto-generate-example/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../auto-generate-example/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto-generate-example/matchControl/match_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/../auto-generate-example/matchControl/match_info.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto-generate-example/matchModel/match_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/../auto-generate-example/matchModel/match_info.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto-generate-example/matchRouter/match_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/../auto-generate-example/matchRouter/match_info.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto-generate-example/matchService/match_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/../auto-generate-example/matchService/match_info.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto-generate-example/match_info.md" beforeDir="false" afterPath="$PROJECT_DIR$/../auto-generate-example/match_info.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto-generate-example/match_info.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../auto-generate-example/match_info.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../binary/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../binary/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../binary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../binary/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../binary/eagle.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../binary/logging.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../binary/pool.a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cdd_chat/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../cdd_chat/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cdd_chat/models/Message.go" beforeDir="false" afterPath="$PROJECT_DIR$/../cdd_chat/models/Message.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-center/config/configs.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config-center/config/configs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-center/config/dev/etcd.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-center/config/dev/etcd.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-center/config/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config-center/config/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-center/config/local/etcd.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-center/config/local/etcd.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-center/config/pro/etcd.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-center/config/pro/etcd.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-center/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config-center/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-center/source/storage.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config-center/source/storage.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-center/source/storage_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../config-center/source/storage_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-center/util/util..go" beforeDir="false" afterPath="$PROJECT_DIR$/../config-center/util/util..go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../discovery/client-side.go" beforeDir="false" afterPath="$PROJECT_DIR$/../discovery/client-side.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/etcd/v3.4.0/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/etcd/v3.4.0/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dramas/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../dramas/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../eagle_srv/eagleContext/hosts.go" beforeDir="false" afterPath="$PROJECT_DIR$/../eagle_srv/eagleContext/hosts.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../eagle_srv/eagleContext/qipai_tcp_srv.go" beforeDir="false" afterPath="$PROJECT_DIR$/../eagle_srv/eagleContext/qipai_tcp_srv.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../eagle_srv/eagleContext/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/../eagle_srv/eagleContext/util.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../eagle_srv/handler/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/../eagle_srv/handler/http.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../eagle_srv/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../eagle_srv/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../er/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../er/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../errorX/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../errorX/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../errorX/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../errorX/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../errorX/example/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../errorX/example/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../etcdnaming/.idea/etcdnaming.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../etcdnaming/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../etcdnaming/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../etcdnaming/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../etcdnaming/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../etcdnaming/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../eyas-sales/sales/src/router/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../eyas-sales/sales/src/router/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../eyas-sales/sales/src/util/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/../eyas-sales/sales/src/util/global.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../eyas-sales/sales/src/util/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/../eyas-sales/sales/src/util/request.js" afterDir="false" />
@@ -64,6 +93,11 @@
       <change beforePath="$PROJECT_DIR$/../freeCustomSystem/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../freeCustomSystem/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../freeCustomSystem/model/message.go" beforeDir="false" afterPath="$PROJECT_DIR$/../freeCustomSystem/model/message.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../freeCustomSystem/规划.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../freeCustomSystem/规划.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fuse/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../fuse/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fuse/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../fuse/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fuse/fuse.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fuse/fuse.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fuse/fuse_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fuse/fuse_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fuse/middleware/gin.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fuse/middleware/gin.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gameTest/independent_layer/ws_2_game.go" beforeDir="false" afterPath="$PROJECT_DIR$/../gameTest/independent_layer/ws_2_game.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gameTest/independent_layer/ws_2_game_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../gameTest/independent_layer/ws_2_game_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ginauth/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/../ginauth/auth.go" afterDir="false" />
@@ -92,7 +126,7 @@
       <change beforePath="$PROJECT_DIR$/../github.com/gorilla/mux" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/gorilla/mux" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/gorilla/websocket" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/gorilla/websocket" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/jessevdk/go-flags" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/jessevdk/go-flags" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../github.com/jinzhu/gorm/.codeclimate.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/jinzhu/gorm/.codeclimate.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/jinzhu/gorm/.codeclimate.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/jinzhu/gorm/.github/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/jinzhu/gorm/.github/ISSUE_TEMPLATE.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/jinzhu/gorm/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/jinzhu/gorm/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/jinzhu/gorm/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/jinzhu/gorm/.gitignore" afterDir="false" />
@@ -527,15 +561,34 @@
       <change beforePath="$PROJECT_DIR$/../golang.org/x/text" beforeDir="false" afterPath="$PROJECT_DIR$/../golang.org/x/text" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../google.golang.org/grpc" beforeDir="false" afterPath="$PROJECT_DIR$/../google.golang.org/grpc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gopkg.in/yaml.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../gopkg.in/yaml.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../goroutine/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../goroutine/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../goroutine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../goroutine/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../goroutine/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../goroutine/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../goroutine/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/../goroutine/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../goroutine/goroutine.go" beforeDir="false" afterPath="$PROJECT_DIR$/../goroutine/goroutine.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../goroutine/goroutine_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../goroutine/goroutine_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../goroutine/gs-schedule.go" beforeDir="false" afterPath="$PROJECT_DIR$/../goroutine/gs-schedule.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../goroutine/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/../goroutine/util.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../graceful/core.go" beforeDir="false" afterPath="$PROJECT_DIR$/../graceful/core.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloworld-micro/date_srv/date-srv.go" beforeDir="false" afterPath="$PROJECT_DIR$/../helloworld-micro/date_srv/date-srv.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloworld-micro/date_srv/proto/date.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../helloworld-micro/date_srv/proto/date.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloworld/.idea/helloworld.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../helloworld/.idea/helloworld.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloworld/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloworld/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../helloworld/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloworld/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../helloworld/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloworld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../helloworld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../helloworld/docs.go" beforeDir="false" afterPath="$PROJECT_DIR$/../helloworld/docs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloworld/docs.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloworld/module/user/userControl/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/../helloworld/module/user/userControl/http.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloworld/module/user/userJob/user-info.go" beforeDir="false" afterPath="$PROJECT_DIR$/../helloworld/module/user/userJob/user-info.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloworld/module/user/userModel/user_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/../helloworld/module/user/userModel/user_info.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloworld/module/user/userRouter/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/../helloworld/module/user/userRouter/http.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloworld/module/user/userService/user_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../helloworld/module/user/userService/user_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloworld/module/user/userTestClient/http_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../helloworld/module/user/userTestClient/http_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloworld_test/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../helloworld_test/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloworld_test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../helloworld_test/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helloworld_test/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../helloworld_test/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irr/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../irr/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irr/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../irr/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jsoncrack/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jsoncrack/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jsoncrack/crack.go" beforeDir="false" afterPath="$PROJECT_DIR$/../jsoncrack/crack.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jsoncrack/crack_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../jsoncrack/crack_test.go" afterDir="false" />
@@ -554,6 +607,8 @@
       <change beforePath="$PROJECT_DIR$/../landlord/dependence/dep-util/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/../landlord/dependence/dep-util/redis.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../landlord/dependence/pb/common.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../landlord/dependence/pb/common.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../landlord/dependence/pb/grpc-p3.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../landlord/dependence/pb/grpc-p3.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson/lesson1/animal/f.go" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson/lesson1/animal/f.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson/lesson1/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson/lesson1/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lockx/lockx_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../lockx/lockx_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mapx/mapx.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mapx/mapx.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mapx/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mapx/util.go" afterDir="false" />
@@ -568,8 +623,8 @@
       <change beforePath="$PROJECT_DIR$/../pg_shards/shard.go" beforeDir="false" afterPath="$PROJECT_DIR$/../pg_shards/shard.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pjx/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pjx/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pjx/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../pjx/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pjx/core.go" beforeDir="false" afterPath="$PROJECT_DIR$/../pjx/core.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pjx/core_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../pjx/core_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pjx/core.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pjx/core_test.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../pjx/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../pjx/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pjx/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../pjx/main_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pjx/template.go" beforeDir="false" afterPath="$PROJECT_DIR$/../pjx/template.go" afterDir="false" />
@@ -586,15 +641,49 @@
       <change beforePath="$PROJECT_DIR$/../redis-sync/example/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-sync/example/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../redis-sync/sync.go" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-sync/sync.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../redis-sync/sync_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-sync/sync_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redisX" beforeDir="false" afterPath="$PROJECT_DIR$/../redisX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redistool/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../redistool/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redistool/limit-list_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../redistool/limit-list_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redistool/serve.go" beforeDir="false" afterPath="$PROJECT_DIR$/../redistool/serve.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redistool/serve_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../redistool/serve_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redix/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../redix/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redix/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../redix/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redix/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../redix/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redix/connx.go" beforeDir="false" afterPath="$PROJECT_DIR$/../redix/connx.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redix/pool.go" beforeDir="false" afterPath="$PROJECT_DIR$/../redix/pool.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redix/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/../redix/util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rediy/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../rediy/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rediy/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rediy/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rediy/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../rediy/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rediy/conny.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rediy/conny.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rediy/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rediy/context.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rediy/error.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rediy/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../rediy/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rediy/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../rediy/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rediy/middleware.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rediy/middleware.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rediy/mode.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rediy/mode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rediy/pool.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rediy/pool.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rediy/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rediy/util.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../reds-sql/util.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rocketmq/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rocketmq/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rocketmq/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../rocketmq/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rocketmq/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rocketmq/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rocketmq/consumer.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rocketmq/consumer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rocketmq/fillmod/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rocketmq/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../rocketmq/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rocketmq/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../rocketmq/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rocketmq/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rocketmq/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rocketmq/mqContext/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rocketmq/mqContext/context.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rocketmq/mqContext/mux.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rocketmq/mqContext/mux.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rocketmq/producer.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rocketmq/producer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rocketmqgomodule/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rocketmqgomodule/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rocketmqgopath/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rocketmqgopath/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rocketmqgopath/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../rocketmqgopath/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../safeLock/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../safeLock/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../safeLock/safe-lock.go" beforeDir="false" afterPath="$PROJECT_DIR$/../safeLock/safe-lock.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../safeLock/safe-lock_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../safeLock/safe-lock_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../servicediscovery/config-joint-server.go" beforeDir="false" afterPath="$PROJECT_DIR$/../servicediscovery/config-joint-server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shangraomajiang/control/activity/activityModel/times_activity_config.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shangraomajiang/control/activity/activityModel/times_activity_config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shangraomajiang/control/activity/activityModel/times_activity_config_union.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shangraomajiang/control/activity/activityModel/times_activity_config_union.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../shangraomajiang/control/activity/activityModel/times_activity_no_config_procedure.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shangraomajiang/control/activity/activityModel/times_activity_no_config_procedure.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shangraomajiang/control/activity/activityModel/times_activity_procedure.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shangraomajiang/control/activity/activityModel/times_activity_procedure.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../shangraomajiang/control/module/moduleModel/activate_code.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shangraomajiang/control/module/moduleModel/activate_code.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../shangraomajiang/control/module/moduleModel/activate_code_procedure.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shangraomajiang/control/module/moduleModel/activate_code_procedure.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../shangraomajiang/control/module/moduleModel/activate_code_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../shangraomajiang/control/module/moduleModel/activate_code_test.go" afterDir="false" />
@@ -606,10 +695,14 @@
       <change beforePath="$PROJECT_DIR$/../tcpx/packet_test.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../tcpx/tcpx.go" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpx/tcpx.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tcpx/tcpx_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../tcpx/tcpx_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testN/internal/f.go" beforeDir="false" afterPath="$PROJECT_DIR$/../testN/internal/f.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testN/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../testN/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test_X" beforeDir="false" afterPath="$PROJECT_DIR$/../test_X" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_binary/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../test_binary/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test_chanel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test_chanel/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test_flag/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test_flag/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test_iota/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../test_iota/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_model_convert/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../test_model_convert/db.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test_redis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test_redis/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test_redis/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../test_redis/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test_sqlx/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test_sqlx/.idea/workspace.xml" afterDir="false" />
@@ -622,6 +715,14 @@
       <change beforePath="$PROJECT_DIR$/../test_toml/test.toml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../test_toml/test_toml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../test_xorm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test_xorm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testrk/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../testrk/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tt/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tt/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tt/e.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tt/e_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tt/model_convert.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tt/model_convert_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tt/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/../tt/util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttt/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../ttt/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../utils/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utils/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../utils/util_jsoncrack/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/../utils/util_jsoncrack/init.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../utils/util_jsoncrack/jsoncrack_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../utils/util_jsoncrack/jsoncrack_test.go" afterDir="false" />
@@ -633,30 +734,21 @@
       <change beforePath="$PROJECT_DIR$/../utils/util_superchecker/superchecker_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../utils/util_superchecker/superchecker_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../utils/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/../utils/utils.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../utils/utils_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../utils/utils_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vx-games/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/config/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/config/config_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/config/config_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/config/dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/config/dev.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/model/goods.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/model/init.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/pb/goods.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/pb/request.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/srv/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/errorGarbage/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/errorGarbage/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/model/order.go" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/model/order.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/payService/service-v2.go" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/payService/service-v2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/payService/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/payService/service.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/model_convert/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/model_convert/cmd/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/model_convert/conf.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/model_convert/conf.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/model_convert/model_convert.go" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/model_convert/model_convert.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/model_convert/model_convert_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/model_convert/model_convert_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/redistool/example.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/redistool/export/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/redistool/export/tmp_srv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/redistool/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/redistool/init.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/redistool/serve.go" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/redistool/serve.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/redistool/serve_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/redistool/serve_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/util.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/util_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/util_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/vxclient/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/vxclient/init.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/vxclient/vx_client.go" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/vxclient/vx_client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/wsx/init.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vx-games/pay_xcx/utils/wsx/wsx.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../vx-kf/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../vx-kf/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../vx-kf/user-pool/userPoolRouter/ws.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../vx-kf/user-pool/userPoolService/ws.go" beforeDir="false" />
@@ -668,33 +760,38 @@
       <change beforePath="$PROJECT_DIR$/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/context.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/example/client/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/example/server/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/logger.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/marshaller.go" beforeDir="false" afterPath="$PROJECT_DIR$/marshaller.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/message.go" beforeDir="false" afterPath="$PROJECT_DIR$/message.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mux.go" beforeDir="false" afterPath="$PROJECT_DIR$/mux.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pack.go" beforeDir="false" afterPath="$PROJECT_DIR$/pack.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pool-v2.go" beforeDir="false" afterPath="$PROJECT_DIR$/pool-v2.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pool.go" beforeDir="false" afterPath="$PROJECT_DIR$/pool.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pool_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pool_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toolkit.go" beforeDir="false" afterPath="$PROJECT_DIR$/toolkit.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/util.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wsx.go" beforeDir="false" afterPath="$PROJECT_DIR$/wsx.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wsx_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/wsx_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xormTool" beforeDir="false" afterPath="$PROJECT_DIR$/../xormTool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xyx_config/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../xyx_config/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xyx_err_srv/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xyx_err_srv/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xyx_err_srv/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xyx_err_srv/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xyx_err_srv/config/deploy/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../xyx_err_srv/config/deploy/deploy.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xyx_err_srv/config/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/../xyx_err_srv/config/init.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xyx_err_srv/handler/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/../xyx_err_srv/handler/error.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xyx_err_srv/jobs/int.go" beforeDir="false" afterPath="$PROJECT_DIR$/../xyx_err_srv/jobs/int.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xyx_err_srv/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../xyx_err_srv/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xyx_err_srv/utils/db/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/../xyx_err_srv/utils/db/init.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xyx_err_srv/xyx_err_srv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xyxproto/xyxsrv/challenge/challengePb/challenge.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../xyxproto/xyxsrv/challenge/challengePb/challenge.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zonst/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zonst/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/common/undependency/redistool/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/common/undependency/redistool/init.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/common/undependency/redistool/serve.go" beforeDir="false" afterPath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/common/undependency/redistool/serve.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/common/undependency/redistool/serve_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/docs/dev.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/docs/dev.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/docs/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/docs/init.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/docs/pro.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/docs/pro.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/handlers/index.go" beforeDir="false" afterPath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/handlers/index.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/handlers/minigame.go" beforeDir="false" afterPath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/handlers/minigame.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/job/accessToken.go" beforeDir="false" afterPath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/job/accessToken.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/middlewares/redis.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/xyx_login_srv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/xyx_login_srv_pro" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../zonst/qipai/api/minigameloginapisrv/xyx_srv_dev" beforeDir="false" />
@@ -715,38 +812,42 @@
     <session id="-762233866">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.24" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="74" />
+          <entry key="go" value="89" />
           <entry key="md" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="74" />
+          <entry key="Go" value="89" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="14442" />
+          <entry key="go" value="14690" />
           <entry key="md" value="86" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="14442" />
+          <entry key="Go" value="14690" />
           <entry key="PLAIN_TEXT" value="86" />
         </counts>
       </usages-collector>
@@ -760,35 +861,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/context.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="171" column="42" lean-forward="true" selection-start-line="171" selection-start-column="42" selection-end-line="171" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wsx.go">
+        <entry file="file://$PROJECT_DIR$/toolkit.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="80" selection-start-line="80" selection-end-line="81" />
-              <folding>
-                <element signature="e#13#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pool_test.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-              <folding>
-                <element signature="e#13#45#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1716">
+              <caret line="72" column="54" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -796,62 +873,92 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3094">
-              <caret line="124" column="14" selection-start-line="124" selection-start-column="14" selection-end-line="124" selection-end-column="14" />
+            <state relative-caret-position="819">
+              <caret line="49" column="61" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
+              <folding>
+                <element signature="n#!!block;n#headerGetString#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pool.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1950">
-              <caret line="80" column="14" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/h.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/logger.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-277">
-              <caret line="22" column="54" lean-forward="true" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+            <state relative-caret-position="182">
+              <caret line="7" selection-start-line="7" selection-end-line="34" selection-end-column="1" />
+              <folding>
+                <element signature="e#13#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pool-v2.go">
+        <entry file="file://$PROJECT_DIR$/wsx_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/message.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
-              <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+              <caret line="17" column="55" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+        <entry file="file://$PROJECT_DIR$/constant.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="52">
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logger_test.go">
+        <entry file="file://$PROJECT_DIR$/pack.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+            <state relative-caret-position="3016">
+              <caret line="162" column="18" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
+              <folding>
+                <element signature="n#!!block;n#PackWithMarshaller#0" />
+                <element signature="n#!!block;n#MessageIDOf#0" />
+                <element signature="n#!!block;n#HeaderOf#0" />
+                <element signature="n#!!block;n#HeaderBytesOf#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-conn.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mux.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routeInfo.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -881,6 +988,7 @@
       <find>Bind</find>
       <find>BodyByte</find>
       <find>[4]</find>
+      <find>urlpatternof</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="E:/go1.12" />
@@ -909,14 +1017,14 @@
         <option value="$PROJECT_DIR$/pool.go" />
         <option value="$PROJECT_DIR$/pool-v2.go" />
         <option value="$PROJECT_DIR$/example/server/main.go" />
-        <option value="$PROJECT_DIR$/wsx_test.go" />
         <option value="$PROJECT_DIR$/logger_test.go" />
-        <option value="$PROJECT_DIR$/toolkit.go" />
         <option value="$PROJECT_DIR$/util.go" />
-        <option value="$PROJECT_DIR$/wsx.go" />
         <option value="$PROJECT_DIR$/pool_test.go" />
         <option value="$PROJECT_DIR$/logger.go" />
         <option value="$PROJECT_DIR$/context.go" />
+        <option value="$PROJECT_DIR$/toolkit.go" />
+        <option value="$PROJECT_DIR$/wsx_test.go" />
+        <option value="$PROJECT_DIR$/wsx.go" />
       </list>
     </option>
   </component>
@@ -926,9 +1034,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1024" />
-    <option name="height" value="744" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1040" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -936,7 +1046,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -948,6 +1057,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -975,7 +1085,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestLoggerColor in wsx">
+  <component name="RunManager" selected="Go Test.TestUserConn in wsx">
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="wsx" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -1014,7 +1124,7 @@
       <pattern value="^TestLoggerColor$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestPack in wsx" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUserConn in wsx" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="wsx" />
       <working_directory value="$PROJECT_DIR$" />
       <framework value="gotest" />
@@ -1022,30 +1132,27 @@
       <package value="wsx" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestPack$" />
+      <pattern value="^TestUserConn$" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Go Build.go build main.go" />
       <item itemvalue="Go Build.go build main.go (1)" />
-      <item itemvalue="Go Test.TestPack in wsx" />
       <item itemvalue="Go Build.go build main.go (2)" />
       <item itemvalue="Go Test.TestLoggerColor in wsx" />
+      <item itemvalue="Go Test.TestUserConn in wsx" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestUserConn in wsx" />
         <item itemvalue="Go Test.TestLoggerColor in wsx" />
         <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Build.go build main.go (2)" />
         <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="Go Test.TestPack in wsx" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestLoggerColor_in_wsx - 2020.07.03 at 16h 03m 55s.xml">
-      <configuration name="TestLoggerColor in wsx" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="TestLoggerColor_in_wsx - 2020.07.03 at 16h 04m 41s.xml">
       <configuration name="TestLoggerColor in wsx" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -1073,11 +1180,15 @@
     <history-entry file="TestLoggerColor_in_wsx - 2020.07.03 at 16h 16m 29s.xml">
       <configuration name="TestLoggerColor in wsx" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="TestUserConn_in_wsx - 2020.12.11 at 20h 31m 29s.xml">
+      <configuration name="TestUserConn in wsx" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2771855" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08635394" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1089,7 +1200,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.21850613" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.026755853" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1139,20 +1250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/message.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1794">
-          <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routeInfo.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../vx-kf/control/user-pool/userPoolService/ws.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2756">
@@ -1167,13 +1264,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mux.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/client/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -1181,33 +1271,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pack.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="162" column="18" lean-forward="true" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!block;n#PackWithMarshaller#0" />
-            <element signature="n#!!block;n#MessageIDOf#0" />
-            <element signature="n#!!block;n#HeaderOf#0" />
-            <element signature="n#!!block;n#HeaderBytesOf#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wrap-conn.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-conn.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2080">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!block;n#Write#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1225,13 +1292,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/constant.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/go1.12/src/net/http/server.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1246,13 +1306,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wsx_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../errorX/errorx.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -1260,17 +1313,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toolkit.go">
+    <entry file="file://$PROJECT_DIR$/pool_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2418">
-          <caret line="99" column="16" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3094">
-          <caret line="124" column="14" selection-start-line="124" selection-start-column="14" selection-end-line="124" selection-end-column="14" />
+        <state relative-caret-position="312">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1288,6 +1334,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pool-v2.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1508">
+          <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -1302,44 +1355,103 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/context.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5226">
+          <caret line="207" column="37" selection-start-line="207" selection-start-column="37" selection-end-line="207" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wsx.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="80" selection-start-line="80" selection-end-line="81" />
+        <state relative-caret-position="639">
+          <caret line="93" column="34" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
           <folding>
             <element signature="e#13#42#0" expanded="true" />
+            <element signature="n#!!block;n#NewWsx#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pool-v2.go">
+    <entry file="file://$PROJECT_DIR$/wsx_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/message.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+          <caret line="17" column="55" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pool_test.go">
+    <entry file="file://$PROJECT_DIR$/constant.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="52">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pack.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3016">
+          <caret line="162" column="18" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
           <folding>
-            <element signature="e#13#45#0" expanded="true" />
+            <element signature="n#!!block;n#PackWithMarshaller#0" />
+            <element signature="n#!!block;n#MessageIDOf#0" />
+            <element signature="n#!!block;n#HeaderOf#0" />
+            <element signature="n#!!block;n#HeaderBytesOf#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-conn.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mux.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routeInfo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="49" column="61" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
+          <folding>
+            <element signature="n#!!block;n#headerGetString#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toolkit.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1716">
+          <caret line="72" column="54" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logger.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-277">
-          <caret line="22" column="54" lean-forward="true" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/context.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="171" column="42" lean-forward="true" selection-start-line="171" selection-start-column="42" selection-end-line="171" selection-end-column="42" />
+        <state relative-caret-position="182">
+          <caret line="7" selection-start-line="7" selection-end-line="34" selection-end-column="1" />
+          <folding>
+            <element signature="e#13#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

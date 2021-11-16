@@ -7,9 +7,9 @@ import (
 
 // refer to wsx.routeType
 const (
-	RouteTypeMessageID = HEADER_ROUTER_TYPE_MESSAGEID
+	RouteTypeMessageID  = HEADER_ROUTER_TYPE_MESSAGEID
 	RouteTypeUrlPattern = HEADER_ROUTER_TYPE_URL_PATTERN
-	RouteTypeAuto      = "AUTO"
+	RouteTypeAuto       = "AUTO"
 )
 
 // wsx Object
@@ -84,4 +84,12 @@ func (wsx *Wsx) ListenAndServe(port string) error {
 // Do same as wsx.ListenAndServe.
 func (wsx *Wsx) Run(port string) error {
 	return wsx.ListenAndServe(port)
+}
+
+func (wsx *Wsx) Any(urlPattern string, f ... func(c *Context)) error {
+	return wsx.mux.AddURLPatternHandler(urlPattern, f...)
+}
+
+func (wsx *Wsx) UseGlobal(f ... func(c *Context)) error {
+	return wsx.mux.UseGlobal(f...)
 }

@@ -1,13 +1,17 @@
 package wsx
 
 import (
+	"fmt"
 	"testing"
 )
 
 func TestUserConn(t *testing.T) {
 	srv := NewWsx("/kf")
-	srv.Config(
-		srv.SetRouteType(RouteTypeAuto),
-	)
+
+
+	if e := srv.ListenAndServe(":8181"); e != nil {
+		fmt.Println(e.Error())
+		return
+	}
 
 }
