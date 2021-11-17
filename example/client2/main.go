@@ -1,22 +1,26 @@
 package main
 
 import (
-	"flag"
 	"fmt"
 	"github.com/fwhezfwhez/errorx"
+	"github.com/fwhezfwhez/wsx"
 	ws2 "github.com/gorilla/websocket"
 	"net/url"
-	"wsx"
 )
 
 func main() {
-	gorilla()
+
+	for i := 0; i < 1; i++ {
+		go gorilla()
+	}
+
+	select {
+
+	}
 }
 
 func gorilla() {
-	var addr = flag.String("addr", "localhost:8111", "http service address")
-	flag.Parse()
-	u := url.URL{Scheme: "ws", Host: *addr, Path: "/kf"}
+	u := url.URL{Scheme: "ws", Host: "localhost:8111", Path: "/kf-ws"}
 	fmt.Println("connecting to ", u.String())
 
 	c, _, e := ws2.DefaultDialer.Dial(u.String(), nil)
@@ -24,7 +28,6 @@ func gorilla() {
 		fmt.Println(errorx.Wrap(e).Error())
 		return
 	}
-	defer c.Close()
 
 	go func() {
 		for {
@@ -33,11 +36,7 @@ func gorilla() {
 				fmt.Println(errorx.Wrap(e).Error())
 				return
 			}
-			//header, e := wsx.HeaderOf(message)
-			//if e != nil {
-			//	fmt.Println(errorx.Wrap(e).Error())
-			//	return
-			//}
+
 			body, e := wsx.BodyBytesOf(message)
 			if e != nil {
 				fmt.Println(errorx.Wrap(e).Error())
@@ -60,6 +59,4 @@ func gorilla() {
 	}
 
 	c.WriteMessage(ws2.BinaryMessage, buf)
-
-	select {}
 }

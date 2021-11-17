@@ -4,9 +4,9 @@ import (
 	"flag"
 	"fmt"
 	"github.com/fwhezfwhez/errorx"
+	"github.com/fwhezfwhez/wsx"
 	ws2 "github.com/gorilla/websocket"
 	"net/url"
-	"wsx"
 )
 
 func main() {
@@ -16,7 +16,7 @@ func main() {
 func gorilla() {
 	var addr = flag.String("addr", "localhost:8111", "http service address")
 	flag.Parse()
-	u := url.URL{Scheme: "ws", Host: *addr, Path: "/kf"}
+	u := url.URL{Scheme: "ws", Host: *addr, Path: "/kf-ws"}
 	fmt.Println("connecting to ", u.String())
 
 	c, _, e := ws2.DefaultDialer.Dial(u.String(), nil)
@@ -33,22 +33,17 @@ func gorilla() {
 				fmt.Println(errorx.Wrap(e).Error())
 				return
 			}
-			//header, e := wsx.HeaderOf(message)
-			//if e != nil {
-			//	fmt.Println(errorx.Wrap(e).Error())
-			//	return
-			//}
+
 			body, e := wsx.BodyBytesOf(message)
 			if e != nil {
 				fmt.Println(errorx.Wrap(e).Error())
 				return
 			}
-			//fmt.Println("header:", header)
 			fmt.Println("body:", string(body))
 		}
 	}()
 
-	buf, e := wsx.Pack(12, wsx.H{
+	buf, e := wsx.Pack(0, wsx.H{
 		"Router-Type":       "URL_PATTERN",
 		"URL-Pattern-Value": "/login/",
 	}, wsx.H{

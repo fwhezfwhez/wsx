@@ -6,6 +6,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/fwhezfwhez/errorx"
+	"io"
 )
 
 func Pack(messageID int, header map[string]interface{}, body interface{}) ([]byte, error) {
@@ -98,7 +99,6 @@ func HeaderLengthOf(stream []byte) (int32, error) {
 	headerLength := binary.BigEndian.Uint32(stream[8:12])
 	return int32(headerLength), nil
 }
-
 
 // PackWithMarshaller will encode message into blocks of length,messageID,headerLength,header,bodyLength,body.
 // Users don't need to know how pack serializes itself if users use UnpackPWithMarshaller.
@@ -194,4 +194,63 @@ func HeaderBytesOf(stream []byte) ([]byte, error) {
 	}
 	header := stream[16 : 16+headerLen]
 	return header, nil
+}
+
+func UnpackToBlockFromReader(reader io.Reader) ([]byte, error) {
+	if reader == nil {
+		return nil, errors.New("reader is nil")
+	}
+	var info = make([]byte, 4, 4)
+	if e := readUntil(reader, info); e != nil {
+		if e == io.EOF {
+			return nil, e
+		}
+		return nil, errorx.Wrap(e)
+	}
+
+	length, e := LengthOf(info)
+	if e != nil {
+		return nil, e
+	}
+	fmt.Println(length)
+	var content = make([]byte, length, length)
+	if e := readUntil(reader, content); e != nil {
+		if e == io.EOF {
+			return nil, e
+		}
+		return nil, errorx.Wrap(e)
+	}
+
+	return append(info, content ...), nil
+}
+
+func readUntil(reader io.Reader, buf []byte) error {
+	if len(buf) == 0 {
+		return nil
+	}
+	var offset int
+	for {
+		n, e := reader.Read(buf[offset:])
+		if e != nil {
+			if e == io.EOF {
+				return e
+			}
+			return errorx.Wrap(e)
+		}
+		offset += n
+		if offset >= len(buf) {
+			break
+		}
+	}
+	return nil
+}
+
+// Length of the stream starting validly.
+// Length doesn't include length flag itself, it refers to a valid message length after it.
+func LengthOf(stream []byte) (int32, error) {
+	if len(stream) < 4 {
+		return 0, errors.New(fmt.Sprintf("stream lenth should be bigger than 4"))
+	}
+	length := binary.BigEndian.Uint32(stream[0:4])
+	return int32(length), nil
 }

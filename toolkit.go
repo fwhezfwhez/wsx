@@ -9,7 +9,7 @@ import (
 )
 
 // ws begin to listen on
-func listenAndServe(relPath string,port string, wsx *Wsx) error {
+func listenAndServe(relPath string, port string, wsx *Wsx) error {
 
 	// Mode = DEBUG
 	wsx.mux.PanicOnExistRouter()
@@ -29,50 +29,59 @@ func listenAndServe(relPath string,port string, wsx *Wsx) error {
 			return
 		}
 		ctx := NewContext(conn)
+		defer conn.Close()
 
-		// ctx.SpyingOnHeartbeat()
+		// 心跳机制
+		if wsx.enableHeartbeat == true {
+			ctx.SpyingOnHeartbeatWithArgs(wsx.heartBeatInterval)
+		}
+
+		// 连接关闭收尾机制
+		if wsx.onClose != nil {
+			ctx.SetOnClose(func() error {
+				wsx.onClose(ctx)
+				return nil
+			})
+		}
 
 		Debugf("[%s]请求进入:", conn.RemoteAddr())
 
-		defer conn.Close()
+		onConnectMessageExampleMsgid, e := Pack(10000, nil, H{"message": "welcome, this is an example of message 10000"})
 
-		// 当粘包时，res存放多余的粘包块，用于给下一次读取补齐
-		var res []byte
+		if e != nil {
+			fmt.Println(errorx.Wrap(e).Error())
+			return
+		}
+
+		onConnectMessageExampleURL, e := Pack(0, H{
+			"Router-Type":       "URL_PATTERN",
+			"URL-Pattern-Value": "/example-of-url-pattern/",
+		}, H{"message": "welcome, this is an example of url parttern /example-of-url-pattern/"})
+
+		conn.WriteMessage(websocket.BinaryMessage, onConnectMessageExampleMsgid)
+		conn.WriteMessage(websocket.BinaryMessage, onConnectMessageExampleURL)
+
 		for {
-			var raw []byte
-			_, message, e := conn.ReadMessage()
-			if e != nil {
-				fmt.Println(errorx.Wrap(e).Error())
-				break
-			}
-			fmt.Println("message:", message)
-			if len(res) != 0 {
-				raw = append(res, message ...)
-				res = nil
-			} else {
-				raw = message
-			}
-			fmt.Println("raw", raw)
-			stream, e := FirstBlockOfBytes(raw)
+			_, co, e := conn.NextReader()
 			if e != nil {
 				fmt.Println(errorx.Wrap(e).Error())
 				break
 			}
 
-			res = raw[len(stream):]
+			block, e := UnpackToBlockFromReader(co)
 
-			fmt.Println(MessageIDOf(stream))
-
-			messageID, e := MessageIDOf(stream)
+			messageID, e := MessageIDOf(block)
 			if e != nil {
 				fmt.Println(errorx.Wrap(e).Error())
 				break
 			}
 
+			ctxCopy := ctx.Clone()
+			ctxCopy.Stream = block
 			if IsSerial(messageID) {
-				handleStream(stream, conn, ctx, wsx.mux)
+				handleStream(block, conn, &ctxCopy, wsx.mux)
 			} else {
-				go handleStream(stream, conn, ctx, wsx.mux)
+				go handleStream(block, conn, &ctxCopy, wsx.mux)
 			}
 		}
 	})

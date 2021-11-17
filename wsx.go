@@ -36,10 +36,15 @@ type Wsx struct {
 	enableHeartbeat bool
 	// when enableHeartbeat = true, client should keep sending heartbeat in this interval
 	heartBeatInterval time.Duration
+
+	// as soon as ctx.Close() is called, onClose will be called
+	onClose func(c *Context)
 }
 
 // NewWsxObject
 func NewWsx(relPath string) *Wsx {
+	m := NewMux()
+	m.PanicOnExistRouter()
 	return &Wsx{
 		relPath:   relPath,
 		mux:       NewMux(),
@@ -92,4 +97,9 @@ func (wsx *Wsx) Any(urlPattern string, f ... func(c *Context)) error {
 
 func (wsx *Wsx) UseGlobal(f ... func(c *Context)) error {
 	return wsx.mux.UseGlobal(f...)
+}
+
+
+func (wsx *Wsx) OnCtxClose(f func(c *Context)) {
+	wsx.onClose = f
 }

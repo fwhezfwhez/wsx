@@ -112,6 +112,7 @@ func (uc *UserConn) AddChanelConn(chanel string, wrapConn *WrapConn) {
 	uc.l.RUnlock()
 
 	if exist {
+		Infof("username %s has more than 1 connection on channel %s, and has close old conn", uc.Username, chanel)
 		old.Close()
 	}
 	uc.l.Lock()
