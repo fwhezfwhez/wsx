@@ -31,6 +31,9 @@ func listenAndServe(relPath string, port string, wsx *Wsx) error {
 		ctx := NewContext(conn)
 		defer conn.Close()
 
+		sessionId, _ := NewWrapConn(conn)
+		ctx.SetSessionID(sessionId)
+
 		// 心跳机制
 		if wsx.enableHeartbeat == true {
 			ctx.SpyingOnHeartbeatWithArgs(wsx.heartBeatInterval)
