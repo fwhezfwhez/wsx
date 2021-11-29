@@ -58,6 +58,10 @@ func (c *Context) SetHostPort(hostport string) {
 	c.hostport = hostport
 }
 
+func (c *Context) GetHostPort() string {
+	return c.hostport
+}
+
 // Bind reads from stream, not from reader. It means this api can call anywhere without times limit.
 // This is the promotion comparing to gin.Context.Bind()
 func (c *Context) Bind(dest interface{}) error {
