@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/fwhezfwhez/errorx"
 	"github.com/gorilla/websocket"
+	"net"
 	"net/http"
 	"runtime/debug"
 )
@@ -31,8 +32,12 @@ func listenAndServe(relPath string, port string, wsx *Wsx) error {
 		ctx := NewContext(conn)
 		defer conn.Close()
 
+		// 注入连接实例唯一id
 		sessionId, _ := NewWrapConn(conn)
 		ctx.SetSessionID(sessionId)
+
+		// 注入连接实例所在内网ip和该端口
+		ctx.SetHostPort(wsx.getHostPort())
 
 		// 心跳机制
 		if wsx.enableHeartbeat == true {
@@ -110,4 +115,45 @@ func handleStream(stream []byte, conn *websocket.Conn, ctx *Context, mux *Mux) {
 	ctxSession.Stream = stream
 
 	HandleMiddleware(&ctxSession, *mux)
+}
+
+// 本机内网ip
+func GetLocalIP(innerIP string) string {
+
+	if innerIP != "" {
+		return innerIP
+	}
+
+	localIps, err := getLocalIpList()
+	if err != nil {
+		fmt.Printf("get local ip failed,err: " + err.Error())
+		panic(err)
+	}
+	if len(localIps) == 0 {
+		innerIP = "127.0.0.1"
+	} else {
+		innerIP = localIps[0]
+	}
+
+	return innerIP
+}
+
+func getLocalIpList() ([]string, error) {
+	addrs, err := net.InterfaceAddrs()
+
+	if err != nil {
+		return nil, err
+	}
+
+	var localipList []string
+	for _, address := range addrs {
+		// 检查ip地址判断是否回环地址
+		if ipnet, ok := address.(*net.IPNet); ok && !ipnet.IP.IsLoopback() {
+			if ipnet.IP.To4() != nil {
+				localipList = append(localipList, ipnet.IP.To4().String())
+			}
+
+		}
+	}
+	return localipList, nil
 }

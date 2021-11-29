@@ -22,6 +22,7 @@ type Context struct {
 	chanel               *string       // 连接标记的渠道，用于多端登录
 	sessionID            *string       // 该连接的sessionID,在wrapConn时生成
 	state                *int          // 登录状态, 1在线，2离线，3忙碌
+	hostport             string        // 连接所在的wsx服务内网host:port
 
 	// 临时值: 每次到达一个请求，都会Clone一个Context，复用了它的全局值，以下值都会重置
 	handlers          []func(c *Context)
@@ -51,6 +52,10 @@ func NewContext(conn *websocket.Conn) *Context {
 		handlers:          make([]func(c *Context), 0, 10),
 		offset:            -1,
 	}
+}
+
+func (c *Context) SetHostPort(hostport string) {
+	c.hostport = hostport
 }
 
 // Bind reads from stream, not from reader. It means this api can call anywhere without times limit.
@@ -171,6 +176,7 @@ func (c *Context) Clone() Context {
 		chanel:               c.chanel,
 		sessionID:            c.sessionID,
 		state:                c.state,
+		hostport:             c.hostport,
 
 		// 重置临时值
 		PerRequestContext: &sync.Map{},

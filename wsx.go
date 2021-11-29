@@ -2,6 +2,7 @@ package wsx
 
 import (
 	"context"
+	"fmt"
 	"time"
 )
 
@@ -39,6 +40,9 @@ type Wsx struct {
 
 	// as soon as ctx.Close() is called, onClose will be called
 	onClose func(c *Context)
+
+	// lister on
+	port string
 }
 
 // NewWsxObject
@@ -83,6 +87,7 @@ func (wsx *Wsx) EnableHeartbeat(interval time.Duration) Op {
 
 // Websocket server will run at port
 func (wsx *Wsx) ListenAndServe(port string) error {
+	wsx.port = port
 	return listenAndServe(wsx.relPath, port, wsx)
 }
 
@@ -99,7 +104,11 @@ func (wsx *Wsx) UseGlobal(f ... func(c *Context)) error {
 	return wsx.mux.UseGlobal(f...)
 }
 
-
 func (wsx *Wsx) OnCtxClose(f func(c *Context)) {
 	wsx.onClose = f
+}
+
+func (wsx *Wsx) getHostPort() string {
+	innerIP := GetLocalIP("")
+	return fmt.Sprintf("%s%s", innerIP, wsx.port)
 }

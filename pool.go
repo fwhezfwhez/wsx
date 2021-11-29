@@ -64,7 +64,12 @@ func (p *Pool) Online(username string, c *Context) error {
 			return errorx.NewFromStringf("wrong type assertion of wsx.Pool, requires *wsx.Context but got %s", reflect.TypeOf(oldContextI).Name())
 		}
 
-		oldContext.Close()
+		// 如果旧连接和新连接，是同一条，则返回。不是同一条，则将旧的那条关闭。
+		if oldContext.GetSessionID() != c.GetSessionID() {
+			oldContext.Close()
+		} else {
+			return nil
+		}
 	}
 
 	p.pool.Set(username, &cCopy)
