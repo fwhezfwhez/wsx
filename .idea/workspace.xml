@@ -88,14 +88,15 @@
       <change afterPath="$PROJECT_DIR$/../wsusersrv/dependency/redistool/serve_test.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wsusersrv/main.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wsusersrv/module/user/userControl/heartbeat.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wsusersrv/module/user/userControl/heartbeat_test.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wsusersrv/module/user/userControl/inner_listen_msg.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wsusersrv/module/user/userControl/login.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wsusersrv/module/user/userControl/login_test.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wsusersrv/module/user/userControl/outer_listen_msg.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wsusersrv/module/user/userRouter/ws.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wsusersrv/src/http.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wsusersrv/src/ws.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wsusersrv/testcase/init-conn.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../wsusersrv/testcase/login_test.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wsusersrv/undependency/util/http.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wxpubapisrv/config/init.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wxpubapisrv/config/node_info.go" afterDir="false" />
@@ -914,6 +915,7 @@
       <change beforePath="$PROJECT_DIR$/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/context.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/example/client/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/example/server/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/logger.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/marshaller.go" beforeDir="false" afterPath="$PROJECT_DIR$/marshaller.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/message.go" beforeDir="false" afterPath="$PROJECT_DIR$/message.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mux.go" beforeDir="false" afterPath="$PROJECT_DIR$/mux.go" afterDir="false" />
@@ -997,7 +999,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="128" />
+          <entry key="go" value="129" />
           <entry key="md" value="3" />
           <entry key="mod" value="1" />
         </counts>
@@ -1005,19 +1007,19 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="DTD" value="1" />
-          <entry key="Go" value="128" />
+          <entry key="Go" value="129" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="17319" />
+          <entry key="go" value="17398" />
           <entry key="md" value="86" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="17319" />
+          <entry key="Go" value="17398" />
           <entry key="PLAIN_TEXT" value="86" />
         </counts>
       </usages-collector>
@@ -1064,14 +1066,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/context.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="300" column="20" lean-forward="true" selection-start-line="300" selection-start-column="20" selection-end-line="300" selection-end-column="20" />
+            <state relative-caret-position="429">
+              <caret line="306" column="29" lean-forward="true" selection-start-line="306" selection-start-column="29" selection-end-line="306" selection-end-column="29" />
               <folding>
                 <element signature="n#!!block;n#Close#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/logger.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="63" column="75" lean-forward="true" selection-start-line="63" selection-start-column="75" selection-end-line="63" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -1111,15 +1122,6 @@
               <folding>
                 <element signature="n#!!block;n#SetRouteType#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/server/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -1194,7 +1196,6 @@
         <option value="$PROJECT_DIR$/pool-v2.go" />
         <option value="$PROJECT_DIR$/logger_test.go" />
         <option value="$PROJECT_DIR$/pool_test.go" />
-        <option value="$PROJECT_DIR$/logger.go" />
         <option value="$PROJECT_DIR$/wsx_test.go" />
         <option value="$PROJECT_DIR$/example/server/main.go" />
         <option value="$PROJECT_DIR$/h.go" />
@@ -1209,6 +1210,7 @@
         <option value="$PROJECT_DIR$/util.go" />
         <option value="$PROJECT_DIR$/message.go" />
         <option value="$PROJECT_DIR$/context.go" />
+        <option value="$PROJECT_DIR$/logger.go" />
       </list>
     </option>
   </component>
@@ -1559,13 +1561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logger.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/go1.12/src/net/http/transport.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -1733,11 +1728,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/context.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="300" column="20" lean-forward="true" selection-start-line="300" selection-start-column="20" selection-end-line="300" selection-end-column="20" />
+        <state relative-caret-position="429">
+          <caret line="306" column="29" lean-forward="true" selection-start-line="306" selection-start-column="29" selection-end-line="306" selection-end-column="29" />
           <folding>
             <element signature="n#!!block;n#Close#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logger.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="63" column="75" lean-forward="true" selection-start-line="63" selection-start-column="75" selection-end-line="63" selection-end-column="75" />
         </state>
       </provider>
     </entry>
