@@ -254,3 +254,25 @@ func LengthOf(stream []byte) (int32, error) {
 	length := binary.BigEndian.Uint32(stream[0:4])
 	return int32(length), nil
 }
+
+func URLPatternOf(stream []byte) (string, error) {
+	header, e := HeaderOf(stream)
+	if e != nil {
+		return "", errorx.Wrap(e)
+	}
+
+	urlPatternI, exist := header["URL-Pattern-Value"]
+
+	if !exist {
+		Infof("call URLPatternOf but URL-Pattern-value not exist")
+		return "", nil
+	}
+
+	urlPattern, ok := urlPatternI.(string)
+	if !ok {
+		Infof("call URLPatternOf but URL-Pattern-value not a string type. %v", urlPatternI)
+		return "", nil
+	}
+
+	return urlPattern, nil
+}
