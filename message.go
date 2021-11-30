@@ -1,5 +1,7 @@
 package wsx
 
+import "github.com/fwhezfwhez/errorx"
+
 const (
 	// message 如果带有 header["Router-Type"]，则可以根据它的值，选择按照messageID处理或者url方式处理
 	// 如果header["Router-Type"] = "MESSAGE_ID",或者没有这个字段,则会从messageID路由中找到handler
@@ -69,3 +71,24 @@ func (msg *Message) Set(k string, v interface{}) {
 //	}
 //	return msg.routerType
 //}
+
+func (msg Message) Bytes() ([]byte, error) {
+	bf, e := Pack(int(msg.MessageID), msg.Header, msg.Body)
+
+	if e != nil {
+		return bf, errorx.Wrap(e)
+	}
+
+	return bf, nil
+}
+
+func NewURLPatternMessage(urlPattern string, body interface{}) (Message) {
+	return Message{
+		MessageID: 0,
+		Header: map[string]interface{}{
+			"Router-Type":       "URL_PATTERN",
+			"URL-Pattern-Value": urlPattern,
+		},
+		Body: body,
+	}
+}
