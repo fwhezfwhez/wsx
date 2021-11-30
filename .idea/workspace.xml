@@ -95,7 +95,7 @@
       <change afterPath="$PROJECT_DIR$/../wsusersrv/src/http.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wsusersrv/src/ws.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wsusersrv/testcase/init-conn.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../wsusersrv/testcase/login.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wsusersrv/testcase/login_test.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wsusersrv/undependency/util/http.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wxpubapisrv/config/init.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wxpubapisrv/config/node_info.go" afterDir="false" />
@@ -918,6 +918,7 @@
       <change beforePath="$PROJECT_DIR$/message.go" beforeDir="false" afterPath="$PROJECT_DIR$/message.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mux.go" beforeDir="false" afterPath="$PROJECT_DIR$/mux.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pack.go" beforeDir="false" afterPath="$PROJECT_DIR$/pack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/util.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xormTool" beforeDir="false" afterPath="$PROJECT_DIR$/../xormTool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xyx_config/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../xyx_config/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xyx_err_srv/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xyx_err_srv/.idea/vcs.xml" afterDir="false" />
@@ -1010,13 +1011,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="17313" />
+          <entry key="go" value="17319" />
           <entry key="md" value="86" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="17313" />
+          <entry key="Go" value="17319" />
           <entry key="PLAIN_TEXT" value="86" />
         </counts>
       </usages-collector>
@@ -1033,8 +1034,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toolkit.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2315">
-              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+            <state relative-caret-position="390">
+              <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
               <folding>
                 <element signature="n#!!block;n#handleStream#0" />
               </folding>
@@ -1054,20 +1055,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/message.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
+            <state relative-caret-position="207">
               <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/context.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="62" column="1" lean-forward="true" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+            <state relative-caret-position="273">
+              <caret line="300" column="20" lean-forward="true" selection-start-line="300" selection-start-column="20" selection-end-line="300" selection-end-column="20" />
               <folding>
                 <element signature="n#!!block;n#Close#0" />
               </folding>
@@ -1078,8 +1079,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/client/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="338">
+              <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
               <folding>
                 <element signature="e#14#147#0" expanded="true" />
               </folding>
@@ -1105,8 +1106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wsx.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2132">
-              <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+            <state relative-caret-position="507">
+              <caret line="90" column="20" lean-forward="true" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
               <folding>
                 <element signature="n#!!block;n#SetRouteType#0" />
               </folding>
@@ -1204,10 +1205,10 @@
         <option value="$PROJECT_DIR$/pool.go" />
         <option value="$PROJECT_DIR$/wsx.go" />
         <option value="$PROJECT_DIR$/toolkit.go" />
-        <option value="$PROJECT_DIR$/context.go" />
         <option value="$PROJECT_DIR$/pack.go" />
         <option value="$PROJECT_DIR$/util.go" />
         <option value="$PROJECT_DIR$/message.go" />
+        <option value="$PROJECT_DIR$/context.go" />
       </list>
     </option>
   </component>
@@ -1649,16 +1650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wsx.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2132">
-          <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!block;n#SetRouteType#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/server/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="676">
@@ -1680,26 +1671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/context.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="62" column="1" lean-forward="true" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!block;n#Close#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/client/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#14#147#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pack.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -1709,16 +1680,6 @@
             <element signature="n#!!block;n#MessageIDOf#0" />
             <element signature="n#!!block;n#HeaderOf#0" />
             <element signature="n#!!block;n#HeaderBytesOf#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toolkit.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2315">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!block;n#handleStream#0" />
           </folding>
         </state>
       </provider>
@@ -1735,8 +1696,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/message.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
+        <state relative-caret-position="207">
           <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/client/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding>
+            <element signature="e#14#147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsx.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="90" column="20" lean-forward="true" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!block;n#SetRouteType#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toolkit.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!block;n#handleStream#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/context.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="300" column="20" lean-forward="true" selection-start-line="300" selection-start-column="20" selection-end-line="300" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!block;n#Close#0" />
+          </folding>
         </state>
       </provider>
     </entry>

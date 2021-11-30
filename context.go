@@ -295,12 +295,11 @@ func (c *Context) SpyingOnHeartbeat() {
 
 func (c *Context) SpyingOnHeartbeatWithArgs(interval time.Duration) {
 	go func() {
-		var timer = time.NewTimer(interval)
 
 	L:
 		for {
 			select {
-			case <-timer.C:
+			case <-time.After(interval):
 				c.Close()
 				Infof("%s未收到心跳，自动关闭", c.Username())
 				break L
