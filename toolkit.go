@@ -7,6 +7,7 @@ import (
 	"net"
 	"net/http"
 	"runtime/debug"
+	"time"
 )
 
 // ws begin to listen on
@@ -72,7 +73,7 @@ func listenAndServe(relPath string, port string, wsx *Wsx) error {
 		for {
 			_, co, e := conn.NextReader()
 			if e != nil {
-				fmt.Println(errorx.Wrap(e).Error())
+				fmt.Printf("%s read reader %s err: %s \n", time.Now().Format("2006-01-02 15:04:05"), ctx.GetSessionID(), errorx.Wrap(e).Error())
 				break
 			}
 
