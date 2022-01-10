@@ -67,7 +67,7 @@ func (p *Pool) Online(username string, c *Context) error {
 
 		// 如果旧连接和新连接，是同一条，则返回。不是同一条，则将旧的那条关闭。
 		if oldContext.GetSessionID() != c.GetSessionID() {
-			fmt.Printf("%s triger context conflict, new %s old %s, old has been closed\n", time.Now().Format("2006-01-02 15:04:05"), oldContext.GetSessionID(), c.GetSessionID())
+			fmt.Printf("%s triger context conflict, new %s old %s, old has been closed\n", time.Now().Format("2006-01-02 15:04:05"), c.GetSessionID(), oldContext.GetSessionID())
 			oldContext.Close()
 		} else {
 			return nil
@@ -132,6 +132,37 @@ func (p *Pool) OfflineWithChanel(chanel string, username string, c *Context) {
 func (p *Pool) Offline(username string) {
 	c, isOnline := p.IsOnline(username)
 	if !isOnline || c == nil {
+		return
+	}
+
+	if p.beforeOffline != nil {
+		p.beforeOffline(c)
+	}
+	p.pool.Delete(username)
+	c.l.Lock()
+	c.Conn.Close()
+	c.l.Unlock()
+
+	if p.afterOffline != nil {
+		p.afterOffline(c)
+	}
+}
+
+func (p *Pool) OfflineCtx(ctx *Context) {
+
+	username := ctx.GetUsername()
+	if username == "" {
+		return
+	}
+
+	c, isOnline := p.IsOnline(username)
+	if !isOnline || c == nil {
+		return
+	}
+
+	// 不是同一个连接，则不处理。
+	// 场景: 同一个用户连上两个连接，第二个连接会杀死第一个连接。但是在第一个连接的心跳超时位置，会按照ctx来离线，如果不作sessionid幂等，则会杀死新连接
+	if ctx.GetSessionID() != c.GetSessionID() {
 		return
 	}
 
