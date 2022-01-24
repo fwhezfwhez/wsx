@@ -8,6 +8,17 @@
       <change afterPath="$PROJECT_DIR$/../demo/src/change_gamesrv.pb.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../gatewayapisrv/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../gatewayapisrv/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jobscriptapisrv/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jobscriptapisrv/dependence/db/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jobscriptapisrv/dependence/db/util.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jobscriptapisrv/dependence/errs/error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jobscriptapisrv/dependence/errs/util.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jobscriptapisrv/job/jobService/withdrawprop.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jobscriptapisrv/job/jobService/withdrawprop_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jobscriptapisrv/job/rpc/send-mail.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jobscriptapisrv/job/rpc/send-mail_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jobscriptapisrv/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jobscriptapisrv/undependence/util/http.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../limittimeactivityapisrv/.idea/limittimeactivityapisrv.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../limittimeactivityapisrv/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../limittimeactivityapisrv/.idea/modules.xml" afterDir="false" />
@@ -73,6 +84,42 @@
       <change afterPath="$PROJECT_DIR$/../mqdsrv/undependency/util/debug.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../mqdsrv/undependency/util/debug_test.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../mqdsrv/undependency/util/http.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqexample/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqexample/dependence/rocketmqv2/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/.idea/mqlogsrv.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/config/areas/shengnei/dev/rocketmq.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/config/areas/shengnei/local/rocketmq.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/config/areas/shengnei/pro/rocketmq.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/config/areas/shengwai/pro/rocketmq.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/config/areas/yingtan/pro/rocketmq.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/config/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/config/service_info.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/dependence/errs/error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/dependence/errs/util.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/deploy/deploy-shengnei/dev/jenkins/jenkins.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/deploy/deploy-shengnei/dev/jenkins/src/deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/deploy/deploy-shengnei/dev/nginx/mqlogsrv.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/deploy/deploy-shengnei/dev/supervisor/mqlogsrv.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/deploy/deploy-shengnei/pro/jenkins/jenkins.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/deploy/deploy-shengnei/pro/jenkins/src/deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/deploy/deploy-shengnei/pro/nginx/mqlogsrv.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/deploy/deploy-shengnei/pro/supervisor/mqlogsrv.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/deploy/deploy-shengwai/pro/jenkins/jenkins.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/deploy/deploy-shengwai/pro/jenkins/src/deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/deploy/deploy-shengwai/pro/nginx/mqlogsrv.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/deploy/deploy-shengwai/pro/supervisor/mqlogsrv.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/deploy/deploy-yingtan/pro/jenkins/jenkins.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/deploy/deploy-yingtan/pro/jenkins/src/deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/deploy/deploy-yingtan/pro/nginx/mqlogsrv.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/deploy/deploy-yingtan/pro/supervisor/mqlogsrv.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mqlogsrv/src/mq.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pgspy/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pgspy/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pgspy/.idea/modules.xml" afterDir="false" />
@@ -172,7 +219,6 @@
       <change afterPath="$PROJECT_DIR$/../wsusersrv/testcase/online-conn.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wsusersrv/undependency/util/host.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wsusersrv/undependency/util/http.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wszonstaccountsrv/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wxpubapisrv/config/init.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wxpubapisrv/config/node_info.go" afterDir="false" />
@@ -1067,8 +1113,8 @@
     <session id="-762233866">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
-          <entry key="project.open.time.0" value="5" />
+          <entry key="project.closed" value="15" />
+          <entry key="project.open.time.0" value="6" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
@@ -1080,7 +1126,7 @@
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -1101,14 +1147,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="11" />
-          <entry key="go" value="18253" />
-          <entry key="md" value="219" />
+          <entry key="go" value="18352" />
+          <entry key="md" value="337" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="18253" />
-          <entry key="PLAIN_TEXT" value="230" />
+          <entry key="Go" value="18352" />
+          <entry key="PLAIN_TEXT" value="348" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.go.postfix.template.usages.trigger">
@@ -1124,8 +1170,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toolkit.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+            <state relative-caret-position="858">
+              <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
               <folding>
                 <element signature="n#!!block;n#handleStream#0" />
                 <element signature="n#!!block;n#GetLocalIP#0" />
@@ -1138,8 +1184,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pool.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="167" lean-forward="true" selection-start-line="167" selection-end-line="167" />
+            <state relative-caret-position="407">
+              <caret line="217" column="21" lean-forward="true" selection-start-line="217" selection-start-column="21" selection-end-line="217" selection-end-column="21" />
               <folding>
                 <element signature="n#!!block;n#Offline#0" />
               </folding>
@@ -1150,8 +1196,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="114">
+              <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -1168,7 +1214,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/context.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="8372">
               <caret line="328" column="22" selection-start-line="328" selection-start-column="22" selection-end-line="328" selection-end-column="22" />
             </state>
           </provider>
@@ -1177,7 +1223,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wsx.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="962">
               <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
             </state>
           </provider>
@@ -1214,6 +1260,7 @@
       <find>Online</find>
       <find>BodyBytesOf</find>
       <find>Close</find>
+      <find>OfflineBy</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="E:/go1.12" />
@@ -1227,7 +1274,6 @@
         <option value="$PROJECT_DIR$/map_test.go" />
         <option value="$PROJECT_DIR$/map.go" />
         <option value="$PROJECT_DIR$/marshaller.go" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/mux.go" />
         <option value="$PROJECT_DIR$/connection.go" />
         <option value="$PROJECT_DIR$/constant.go" />
@@ -1256,6 +1302,7 @@
         <option value="$PROJECT_DIR$/reporterr/src/new-conn.go" />
         <option value="$PROJECT_DIR$/reporterr/main.go" />
         <option value="$PROJECT_DIR$/reporterr/src/start-srv.go" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pool.go" />
       </list>
     </option>
@@ -1277,6 +1324,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1288,7 +1336,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1420,8 +1467,8 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.85820895" visible="true" weight="0.4088486" />
-      <window_info id="Structure" order="1" sideWeight="0.14179105" side_tool="true" visible="true" weight="0.4088486" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8573021" visible="true" weight="0.23667377" />
+      <window_info id="Structure" order="1" sideWeight="0.14269789" side_tool="true" visible="true" weight="0.23667377" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -1432,7 +1479,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32998884" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.25306576" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.25306576" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1657,9 +1704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2730">
           <caret line="129" column="16" selection-start-line="129" selection-start-column="16" selection-end-line="129" selection-end-column="16" />
-          <folding>
-            <element signature="n#!!block;n#headerGetString#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1681,9 +1725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding>
-            <element signature="e#14#147#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1691,12 +1732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5044">
           <caret line="268" column="5" selection-start-line="268" selection-start-column="5" selection-end-line="268" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!block;n#PackWithMarshaller#0" />
-            <element signature="n#!!block;n#MessageIDOf#0" />
-            <element signature="n#!!block;n#HeaderOf#0" />
-            <element signature="n#!!block;n#HeaderBytesOf#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1727,13 +1762,6 @@
     <entry file="file://$PROJECT_DIR$/reporterr/main.go" />
     <entry file="file://$PROJECT_DIR$/reporterr/src/new-conn.go" />
     <entry file="file://$PROJECT_DIR$/reporterr/src/start-srv.go" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1741,17 +1769,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/context.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8372">
+          <caret line="328" column="22" selection-start-line="328" selection-start-column="22" selection-end-line="328" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wsx.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="962">
           <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/toolkit.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+        <state relative-caret-position="858">
+          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
           <folding>
             <element signature="n#!!block;n#handleStream#0" />
             <element signature="n#!!block;n#GetLocalIP#0" />
@@ -1760,17 +1802,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/context.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="328" column="22" selection-start-line="328" selection-start-column="22" selection-end-line="328" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pool.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="167" lean-forward="true" selection-start-line="167" selection-end-line="167" />
+        <state relative-caret-position="407">
+          <caret line="217" column="21" lean-forward="true" selection-start-line="217" selection-start-column="21" selection-end-line="217" selection-end-column="21" />
           <folding>
             <element signature="n#!!block;n#Offline#0" />
           </folding>

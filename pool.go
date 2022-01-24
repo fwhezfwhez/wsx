@@ -220,6 +220,7 @@ func (p *Pool) CommonSend(username string, messageID int, header H, v interface{
 	if e != nil {
 		return errorx.Wrap(e)
 	}
+	fmt.Printf("%s send buf to username %s buf %v \n", time.Now().Format("2006-01-02 15:04:05"), username, buf)
 
 	return errorx.Wrap(ctx.WriteMessage(buf))
 }

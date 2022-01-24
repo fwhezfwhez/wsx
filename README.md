@@ -1,6 +1,10 @@
 ## wsx
 websocket手脚架开放工具
 
+## 版本公告
+v1.2.7 追加了连接sessionid关键信息打印
+v1.2.8 追加了pool.OfflineCtx方法,内部做了sessionId幂等。防止同用户多连接，早连接的池回调杀死新连接。
+
 ## 功能
 - 同时支持messageID路由，和url路由
 - 支持中间件
