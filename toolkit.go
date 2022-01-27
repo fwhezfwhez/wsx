@@ -40,6 +40,8 @@ func listenAndServe(relPath string, port string, wsx *Wsx) error {
 		// 注入连接实例所在内网ip和该端口
 		ctx.SetHostPort(wsx.getHostPort())
 
+		Debuglnf("recv_event connection_establish session_id %s hostport %s", sessionId, wsx.getHostPort())
+
 		// 心跳机制
 		if wsx.enableHeartbeat == true {
 			ctx.SpyingOnHeartbeatWithArgs(wsx.heartBeatInterval)
@@ -52,8 +54,6 @@ func listenAndServe(relPath string, port string, wsx *Wsx) error {
 				return nil
 			})
 		}
-
-		Debugf("[%s]请求进入:", conn.RemoteAddr())
 
 		onConnectMessageExampleMsgid, e := Pack(10000, nil, H{"message": "welcome, this is an example of message 10000"})
 
@@ -73,6 +73,8 @@ func listenAndServe(relPath string, port string, wsx *Wsx) error {
 		for {
 			_, co, e := conn.NextReader()
 			if e != nil {
+				Debuglnf("recv_event reader_read_err_conn_closing session_id %s hostport %s username %s err %s", sessionId, wsx.getHostPort(),ctx.GetUsername(),e)
+
 				fmt.Printf("%s read reader %s err: %s \n", time.Now().Format("2006-01-02 15:04:05"), ctx.GetSessionID(), errorx.Wrap(e).Error())
 				break
 			}
@@ -81,6 +83,9 @@ func listenAndServe(relPath string, port string, wsx *Wsx) error {
 
 			messageID, e := MessageIDOf(block)
 			if e != nil {
+				Debuglnf("recv_event unpack_messageid_err_conn_closing session_id %s hostport %s username %s err %s", sessionId, wsx.getHostPort(),ctx.GetUsername(), e.Error())
+
+
 				fmt.Println(errorx.Wrap(e).Error())
 				break
 			}

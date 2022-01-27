@@ -295,17 +295,18 @@ func (c *Context) SpyingOnHeartbeat() {
 
 func (c *Context) SpyingOnHeartbeatWithArgs(interval time.Duration) {
 	go func() {
+		Debuglnf("recv_event start_heartbeat_spy session_id %s hostport %s username %s", c.GetSessionID(),c.GetHostPort(), c.GetUsername())
 
 	L:
 		for {
 			select {
 			case <-time.After(interval):
+				Debuglnf("recv_event on_heartbeat_timeout_conn_closing session_id %s hostport %s username %s", c.GetSessionID(),c.GetHostPort(), c.GetUsername())
 				c.Close()
-				Infof("%s未收到心跳，自动关闭", c.Username())
 				break L
 			case <-c.heartbeatChan:
+				Debuglnf("recv_event heartbeat_recv session_id %s hostport %s username %s", c.GetSessionID(),c.GetHostPort(), c.GetUsername())
 				// do nothing
-				Infof("%s收到心跳，自动续约", c.Username())
 			}
 		}
 	}()

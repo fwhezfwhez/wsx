@@ -67,6 +67,10 @@ func (p *Pool) Online(username string, c *Context) error {
 
 		// 如果旧连接和新连接，是同一条，则返回。不是同一条，则将旧的那条关闭。
 		if oldContext.GetSessionID() != c.GetSessionID() {
+
+			Debuglnf("recv_event online_duplicated_sessionid old_session_id %s new_session_id %s username %s", oldContext.GetSessionID(), c.GetSessionID(),c.GetUsername())
+
+
 			fmt.Printf("%s triger context conflict, new %s old %s, old has been closed\n", time.Now().Format("2006-01-02 15:04:05"), c.GetSessionID(), oldContext.GetSessionID())
 			oldContext.Close()
 		} else {
