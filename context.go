@@ -18,7 +18,6 @@ type Context struct {
 	PerConnectionContext *sync.Map     // 连接域内的map
 	username             *string       // 连接所属的username
 	heartbeatChan        chan struct{} // 连接所属的心跳chan
-	onClose              func() error  // close时的回调
 	chanel               *string       // 连接标记的渠道，用于多端登录
 	sessionID            *string       // 该连接的sessionID,在wrapConn时生成
 	state                *int          // 登录状态, 1在线，2离线，3忙碌
@@ -176,7 +175,6 @@ func (c *Context) Clone() Context {
 		PerConnectionContext: c.PerConnectionContext,
 		username:             c.username,
 		heartbeatChan:        c.heartbeatChan,
-		onClose:              c.onClose,
 		chanel:               c.chanel,
 		sessionID:            c.sessionID,
 		state:                c.state,
@@ -321,15 +319,9 @@ func (c *Context) Close() {
 		c.Conn.Close()
 	}()
 
-	if c.onClose != nil {
-		c.onClose()
-	}
 
 }
 
-func (c *Context) SetOnClose(f func() error) {
-	c.onClose = f
-}
 
 func (c *Context) SetOnlineState() {
 	*c.state = 1

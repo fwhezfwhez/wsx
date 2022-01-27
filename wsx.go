@@ -39,7 +39,7 @@ type Wsx struct {
 	heartBeatInterval time.Duration
 
 	// as soon as ctx.Close() is called, onClose will be called
-	onClose func(c *Context)
+	onClose func()
 
 	// lister on
 	port string
@@ -104,7 +104,7 @@ func (wsx *Wsx) UseGlobal(f ... func(c *Context)) error {
 	return wsx.mux.UseGlobal(f...)
 }
 
-func (wsx *Wsx) OnCtxClose(f func(c *Context)) {
+func (wsx *Wsx) OnCtxClose(f func()) {
 	wsx.onClose = f
 }
 

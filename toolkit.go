@@ -49,10 +49,7 @@ func listenAndServe(relPath string, port string, wsx *Wsx) error {
 
 		// 连接关闭收尾机制
 		if wsx.onClose != nil {
-			ctx.SetOnClose(func() error {
-				wsx.onClose(ctx)
-				return nil
-			})
+			wsx.onClose()
 		}
 
 		onConnectMessageExampleMsgid, e := Pack(10000, nil, H{"message": "welcome, this is an example of message 10000"})
